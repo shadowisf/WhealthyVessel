@@ -1,4 +1,4 @@
-import { textColor, primaryColor } from "../utils/readColors";
+import { textColor, primaryColor, secondaryColor } from "../utils/readColors";
 import CustomAnchor from "./CustomAnchor";
 import CustomAnchorWithImage from "./CustomAnchorWithImage";
 
@@ -38,7 +38,7 @@ export default function TopBar() {
           <img src="public/logo.svg" alt="logo" />
           <div className="logo-text-container">
             <span style={{ color: primaryColor }}>WHEALTHY </span>
-            <span style={{ color: primaryColor }}>VESSEL</span>
+            <span style={{ color: secondaryColor }}>VESSEL</span>
           </div>
         </CustomAnchor>
 
@@ -46,8 +46,8 @@ export default function TopBar() {
           <CustomAnchor color={primaryColor} href={"/"}>
             HOME
           </CustomAnchor>
-          <CustomAnchor color={primaryColor} href={"/"}>
-            OUR STORY
+          <CustomAnchor color={primaryColor} href={"/history"}>
+            HISTORY
           </CustomAnchor>
           <CustomAnchor color={primaryColor} href={"/"}>
             RECIPES

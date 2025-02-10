@@ -28,6 +28,7 @@ export default function CustomAnchorWithImage({
         gap: "7px",
       }}
       to={href}
+      target="_blank"
     >
       <img style={{ width: width }} src={image} />
       {children ? <span>{children}</span> : null}
