@@ -1,0 +1,103 @@
+:root {
+  --primary-color: rgb(110, 186, 94);
+  --secondary-color: rgb(154, 214, 145);
+
+  --background-color: white;
+  --text-color: black;
+}
+
+@font-face {
+  font-family: "KC Obra Letra"; /* Name you will use in CSS */
+  src: url("./assets/fonts/KCObraLetraRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: --background_color;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-md: 20px;
+$font-size-lg: 24px;
+$font-size-xl: 32px;
+$font-size-xxl: 40px;
+$font-size-xxxl: 48px;
+$font-size-xxxxl: 64px;
+
+.topbar-container {
+  display: grid;
+  gap: 10px;
+
+  .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+  }
+
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+
+      span {
+        font-family: "KC Obra Letra";
+        font-size: $font-size-xl;
+      }
+    }
+
+    .options-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .language-container {
+      position: relative;
+
+      select {
+        appearance: none;
+        border: none;
+        padding: 5px;
+        background-color: lightgray;
+        border-radius: 0;
+        font-size: $font-size-sm;
+        padding-right: 30px;
+        width: 100%;
+      }
+
+      select {
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath d="M20 40 L50 70 L80 40 Z" fill="black" /%3E%3C/svg%3E');
+        background-position: right 10px center;
+        background-repeat: no-repeat;
+        background-size: 12px;
+      }
+    }
+  }
+}
