@@ -1,5 +1,6 @@
-import { textColor, primaryColor, secondaryColor } from "../utils/readColors";
+import { textColor, primaryColor } from "../utils/readColors";
 import CustomAnchor from "./CustomAnchor";
+import CustomAnchorWithImage from "./CustomAnchorWithImage";
 
 export default function TopBar() {
   return (
@@ -12,13 +13,19 @@ export default function TopBar() {
         </div>
 
         <div className="right">
-          <CustomAnchor
-            href="
-https://www.facebook.com/share/12EwN2tWXUJ/?mibextid=wwXIfr"
+          <CustomAnchorWithImage
+            href="https://www.tiktok.com/@whealthy.cooking"
             color={textColor}
-          >
-            Facebook
-          </CustomAnchor>
+            image="public/tiktok.svg"
+            width="24px"
+          />
+
+          <CustomAnchorWithImage
+            href="https://www.facebook.com/share/12EwN2tWXUJ/?mibextid=wwXIfr"
+            color={textColor}
+            image="public/facebook.svg"
+            width="24px"
+          />
         </div>
       </div>
 
@@ -31,27 +38,27 @@ https://www.facebook.com/share/12EwN2tWXUJ/?mibextid=wwXIfr"
           <img src="public/logo.svg" alt="logo" />
           <div className="logo-text-container">
             <span style={{ color: primaryColor }}>WHEALTHY </span>
-            <span style={{ color: secondaryColor }}>VESSEL</span>
+            <span style={{ color: primaryColor }}>VESSEL</span>
           </div>
         </CustomAnchor>
 
         <div className="options-container">
           <CustomAnchor color={primaryColor} href={"/"}>
-            Option One
+            HOME
           </CustomAnchor>
           <CustomAnchor color={primaryColor} href={"/"}>
-            Option Two
+            OUR STORY
           </CustomAnchor>
           <CustomAnchor color={primaryColor} href={"/"}>
-            Option Three
+            RECIPES
           </CustomAnchor>
           <CustomAnchor color={primaryColor} href={"/"}>
-            Option Four
+            PRODUCTS
           </CustomAnchor>
         </div>
 
         <div className="language-container">
-          <select className="language-dropdown">
+          <select>
             <option value="en">🇺🇸 ENGLISH (UNITED STATES)</option>
             <option value="ar">🇸🇦 ARABIC (SAUDIA ARABIA)</option>
           </select>

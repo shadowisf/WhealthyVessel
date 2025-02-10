@@ -4,13 +4,31 @@
 
   --background-color: white;
   --text-color: black;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-md: 20px;
+  --font-size-lg: 24px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 40px;
+  --font-size-xxxl: 48px;
+  --font-size-xxxxl: 64px;
 }
 
 @font-face {
-  font-family: "KC Obra Letra"; /* Name you will use in CSS */
+  font-family: "KC Obra Letra";
   src: url("public/KCObraLetraRegular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("public/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("public/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
 }
 
 * {
@@ -21,22 +39,11 @@
 
 body {
   background-color: --background_color;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Plus Jakarta Sans";
 }
-
-$font-size-xs: 12px;
-$font-size-sm: 14px;
-$font-size-base: 16px;
-$font-size-md: 20px;
-$font-size-lg: 24px;
-$font-size-xl: 32px;
-$font-size-xxl: 40px;
-$font-size-xxxl: 48px;
-$font-size-xxxxl: 64px;
 
 .topbar-container {
   display: grid;
-  gap: 10px;
 
   .banner-container {
     display: flex;
@@ -45,13 +52,20 @@ $font-size-xxxxl: 64px;
     height: 40px;
     background-color: var(--primary-color);
     color: var(--background-color);
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
   }
 
   .navbar-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 25px;
+    padding: 25px 25px;
 
     .logo-container {
       display: flex;
@@ -67,7 +81,7 @@ $font-size-xxxxl: 64px;
 
       span {
         font-family: "KC Obra Letra";
-        font-size: $font-size-xl;
+        font-size: var(--font-size-xl);
       }
     }
 
@@ -75,7 +89,7 @@ $font-size-xxxxl: 64px;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 25px;
+      gap: 50px;
     }
 
     .language-container {
@@ -87,7 +101,7 @@ $font-size-xxxxl: 64px;
         padding: 5px;
         background-color: lightgray;
         border-radius: 0;
-        font-size: $font-size-sm;
+        font-size: var(--font-size-sm);
         padding-right: 30px;
         width: 100%;
       }
@@ -99,5 +113,49 @@ $font-size-xxxxl: 64px;
         background-size: 12px;
       }
     }
+  }
+}
+
+.video-container {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+
+  .video-text-container {
+    padding: 75px 30px;
+    background-color: rgba(0, 0, 0, 0.25);
+    top: 0;
+    bottom: 0;
+    left: 100px;
+    right: 25px;
+    position: absolute;
+    color: white;
+    width: 550px;
+    height: fit-content;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding-top: 200px;
+
+    .location {
+      font-weight: bolder;
+    }
+
+    h1 {
+      font-size: var(--font-size-xxxl);
+      font-weight: bolder;
+    }
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
