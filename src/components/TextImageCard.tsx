@@ -20,7 +20,7 @@ export default function TextImageCard({
   reverse,
 }: TextImageCardProps) {
   return reverse ? (
-    <div className="text-image-card-container">
+    <div className="individual-text-image-card-container">
       <div className="side">
         <h1>{header}</h1>
 
@@ -34,7 +34,7 @@ export default function TextImageCard({
       <img src={image} />
     </div>
   ) : (
-    <div className="text-image-card-container">
+    <div className="individual-text-image-card-container">
       <img src={image} />
 
       <div className="side">
