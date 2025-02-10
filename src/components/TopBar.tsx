@@ -28,7 +28,7 @@ https://www.facebook.com/share/12EwN2tWXUJ/?mibextid=wwXIfr"
           color={"transparent"}
           href={"/"}
         >
-          <img src="src/assets/logo.svg" alt="logo" />
+          <img src="public/logo.svg" alt="logo" />
           <div className="logo-text-container">
             <span style={{ color: primaryColor }}>WHEALTHY </span>
             <span style={{ color: secondaryColor }}>VESSEL</span>
