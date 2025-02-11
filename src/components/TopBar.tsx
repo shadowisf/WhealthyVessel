@@ -8,7 +8,7 @@ export default function TopBar() {
       <div className="banner-container">
         <div className="left">
           <CustomAnchor href={"/"} color={textColor}>
-            UA Login
+            WV Login
           </CustomAnchor>
         </div>
 
@@ -16,26 +16,26 @@ export default function TopBar() {
           <CustomAnchorWithImage
             href="https://www.tiktok.com/@whealthy.cooking"
             color={textColor}
-            image="public/tiktok.svg"
+            image="public/icons/tiktok.svg"
             width="24px"
           />
 
           <CustomAnchorWithImage
             href="https://www.facebook.com/share/12EwN2tWXUJ/?mibextid=wwXIfr"
             color={textColor}
-            image="public/facebook.svg"
+            image="public/icons/facebook.svg"
             width="24px"
           />
         </div>
       </div>
 
-      <div className="navbar-container">
+      <nav>
         <CustomAnchor
           className="logo-container"
           color={"transparent"}
           href={"/"}
         >
-          <img src="public/logo.svg" alt="logo" />
+          <img src="public/icons/logo.svg" alt="logo" />
           <div className="logo-text-container">
             <span style={{ color: primaryColor }}>WHEALTHY </span>
             <span style={{ color: secondaryColor }}>VESSEL</span>
@@ -63,7 +63,7 @@ export default function TopBar() {
             <option value="ar">🇸🇦 ARABIC (SAUDIA ARABIA)</option>
           </select>
         </div>
-      </div>
+      </nav>
     </div>
   );
 }

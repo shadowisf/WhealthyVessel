@@ -5,6 +5,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./Home.tsx";
 import TopBar from "./components/TopBar.tsx";
 import History from "./History.tsx";
+import Footer from "./components/Footer.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -18,6 +19,8 @@ createRoot(document.getElementById("root")!).render(
         {/* history */}
         <Route path="/history" element={<History />} />
       </Routes>
+
+      <Footer />
     </BrowserRouter>
   </StrictMode>
 );

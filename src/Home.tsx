@@ -3,9 +3,14 @@ import TextImageCard from "./components/TextImageCard";
 import { primaryColor, secondaryColor } from "./utils/readColors";
 import ReviewCard from "./components/ReviewCard";
 import CustomButton from "./components/CustomButton";
+import PhoneInput from "react-phone-number-input";
+import { useState } from "react";
+import "react-phone-number-input/style.css";
 
 export default function Home() {
   const navigate = useNavigate();
+
+  const [value, setValue] = useState("");
 
   return (
     <>
@@ -28,7 +33,7 @@ export default function Home() {
           </p>
         </div>
 
-        <video src="public/intro.mp4" autoPlay loop />
+        <video src="public/videos/intro.mp4" autoPlay loop />
       </div>
 
       <main style={{ marginBottom: "100px" }}>
@@ -66,7 +71,7 @@ export default function Home() {
                 </span>
               </>
             }
-            image={"public/card1.jpg"}
+            image={"public/images/cookware-history.jpg"}
             onClick={() => navigate("/history")}
             button_text="LEARN MORE"
             reverse={false}
@@ -88,7 +93,7 @@ export default function Home() {
                 with effortless cooking.
               </>
             }
-            image={"public/card2.jpg"}
+            image={"public/images/recipe-inspirations.jpg"}
             onClick={() => navigate("/history")}
             button_text="START COOKING"
             reverse={true}
@@ -118,7 +123,7 @@ export default function Home() {
                 .
               </>
             }
-            image={"public/card3.jpg"}
+            image={"public/images/explore-products.jpg"}
             onClick={() => navigate("/history")}
             button_text="VIEW PRODUCTS"
             reverse={false}
@@ -144,7 +149,7 @@ export default function Home() {
         Plus, the quality of the titanium is top-notch – non-stick, durable, and
         eco-friendly. I highly recommend Whealthy Vessel for anyone looking to
         make healthier meals with quality cookware!"
-              profile_image="public/profile1.jpeg"
+              profile_image="public/images/josiah-erum.jpeg"
               stars={5}
               name="Josiah Erum"
             />
@@ -156,7 +161,7 @@ export default function Home() {
 The staff is knowledgeable and helpful, answering all my questions about the benefits of Saladmaster cookwares. I love how their products promote even heating and long-lasting performance. Definitely a must-visit for anyone looking to upgrade their kitchen with top-notch cookware!
 
 Highly recommend!"
-              profile_image="public/profile2.png"
+              profile_image="public/images/jainey-erum.jpeg"
               stars={5}
               name="Jainey Erum"
             />
@@ -165,17 +170,28 @@ Highly recommend!"
 
         <section className="reach-out-container">
           <h1 style={{ color: primaryColor }}>
-            REACH OUT <span style={{ color: secondaryColor }}>TO US</span>
+            REACH OUT -<br />
+            <span style={{ color: secondaryColor }}>WE'RE JUST AN</span>
+            <br />
+            <span style={{ color: secondaryColor }}>EMAIL AWAY!</span>
           </h1>
 
           <form className="form-container">
             <div className="name-phone-container">
               <input placeholder="Name" type="text" required />
 
-              <input placeholder="Phone Number" type="text" required />
+              <PhoneInput
+                international
+                placeholder="Phone Number"
+                value={value}
+                /* @ts-ignore */
+                onChange={setValue}
+                defaultCountry="SA"
+                style={{ width: "100%" }}
+              />
             </div>
 
-            <input placeholder="E-mail Address" type="email" required />
+            <input placeholder="E-Mail Address" type="email" required />
 
             <textarea placeholder="Message" name="message" rows={4} required />
 
