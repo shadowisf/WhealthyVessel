@@ -1,15 +1,12 @@
-import { useNavigate } from "react-router-dom";
-import TextImageCard from "./components/TextImageCard";
-import { primaryColor, secondaryColor } from "./utils/readColors";
-import ReviewCard from "./components/ReviewCard";
-import CustomButton from "./components/CustomButton";
+import TextImageCard from "../components/TextImageCard";
+import { primaryColor, secondaryColor } from "../utils/readColors";
+import ReviewCard from "../components/ReviewCard";
+import CustomButton from "../components/CustomButton";
 import PhoneInput from "react-phone-number-input";
 import { useState } from "react";
 import "react-phone-number-input/style.css";
 
 export default function Home() {
-  const navigate = useNavigate();
-
   const [value, setValue] = useState("");
 
   return (
@@ -63,7 +60,7 @@ export default function Home() {
               </>
             }
             image={"public/images/cookware-history.jpg"}
-            onClick={() => navigate("/history")}
+            href="/history"
             button_text="LEARN MORE"
             reverse={false}
           >
@@ -81,7 +78,7 @@ export default function Home() {
               </>
             }
             image={"public/images/recipe-inspirations.jpg"}
-            onClick={() => navigate("/history")}
+            href="/recipes"
             button_text="START COOKING"
             reverse={true}
           >
@@ -100,7 +97,7 @@ export default function Home() {
               </>
             }
             image={"public/images/explore-products.jpg"}
-            onClick={() => navigate("/history")}
+            href="/products"
             button_text="VIEW PRODUCTS"
             reverse={false}
           >

@@ -227,17 +227,20 @@ main {
   }
 }
 
-button {
+button,
+.anchor-button {
   padding: 10px 15px;
   width: fit-content;
 
   appearance: none;
   border: none;
+  color: var(--text-color);
+  text-decoration: none;
 
   border-radius: 5px;
 
   font-size: var(--font-size-xs);
-  font-weight: bolder;
+  font-weight: 599;
 
   cursor: pointer;
 }

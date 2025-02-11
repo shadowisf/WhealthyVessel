@@ -1,5 +1,5 @@
-import QuoteCard from "./components/QuoteCard";
-import { primaryColor, secondaryColor } from "./utils/readColors";
+import QuoteCard from "../components/QuoteCard";
+import { primaryColor, secondaryColor } from "../utils/readColors";
 
 export default function History() {
   return (
@@ -56,7 +56,7 @@ export default function History() {
                 </h1>
               </>
             }
-            image="public/images/harry-lemmons.jpg"
+            image="public/images/profile1.jpg"
             reverse={false}
           >
             If you eat right, and you prepare your food right, you have a much

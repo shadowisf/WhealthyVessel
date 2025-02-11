@@ -16,14 +16,14 @@ export default function TopBar() {
           <CustomAnchorWithImage
             href="https://www.tiktok.com/@whealthy.cooking"
             color={textColor}
-            image="public/icons/tiktok.svg"
+            image="/icons/tiktok.svg"
             width="24px"
           />
 
           <CustomAnchorWithImage
             href="https://www.facebook.com/share/12EwN2tWXUJ/?mibextid=wwXIfr"
             color={textColor}
-            image="public/icons/facebook.svg"
+            image="/icons/facebook.svg"
             width="24px"
           />
         </div>
@@ -35,7 +35,7 @@ export default function TopBar() {
           color={"transparent"}
           href={"/"}
         >
-          <img src="public/icons/logo.svg" alt="logo" />
+          <img src="/icons/logo.svg" alt="logo" />
           <div className="logo-text-container">
             <span style={{ color: primaryColor }}>WHEALTHY </span>
             <span style={{ color: secondaryColor }}>VESSEL</span>
@@ -49,10 +49,10 @@ export default function TopBar() {
           <CustomAnchor color={primaryColor} href={"/history"}>
             HISTORY
           </CustomAnchor>
-          <CustomAnchor color={primaryColor} href={"/"}>
+          <CustomAnchor color={primaryColor} href={"/recipes"}>
             RECIPES
           </CustomAnchor>
-          <CustomAnchor color={primaryColor} href={"/"}>
+          <CustomAnchor color={primaryColor} href={"/products"}>
             PRODUCTS
           </CustomAnchor>
         </div>

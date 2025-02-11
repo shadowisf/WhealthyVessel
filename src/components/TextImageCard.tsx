@@ -6,16 +6,16 @@ type TextImageCardProps = {
   header: React.ReactNode;
   children: React.ReactNode;
   button_text: string;
-  onClick: () => void;
   image: string;
   reverse: boolean;
+  href: string;
 };
 
 export default function TextImageCard({
   header,
   children,
   button_text,
-  onClick,
+  href,
   image,
   reverse,
 }: TextImageCardProps) {
@@ -26,7 +26,7 @@ export default function TextImageCard({
 
         <p>{children}</p>
 
-        <CustomButton onClick={onClick} color={primaryColor}>
+        <CustomButton href={href} color={primaryColor}>
           {button_text}
         </CustomButton>
       </div>
@@ -42,7 +42,7 @@ export default function TextImageCard({
 
         <p>{children}</p>
 
-        <CustomButton onClick={onClick} color={primaryColor}>
+        <CustomButton href={href} color={primaryColor}>
           {button_text}
         </CustomButton>
       </div>
