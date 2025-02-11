@@ -386,3 +386,80 @@ p {
     }
   }
 }
+
+.rights-reserved-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 75px;
+  padding-bottom: 25px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+
+  font-size: var(--font-size-xs);
+}
+
+.history-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+    font-size: var(--font-size-md);
+  }
+
+  iframe {
+    align-self: center;
+  }
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  h1 {
+    text-align: center;
+  }
+
+  .individual-quote-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    .side {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    p {
+      font-size: var(--font-size-md);
+      text-align: center;
+
+      .quote {
+        width: 20px;
+        margin-right: 7.5px;
+        margin-left: 7.5px;
+      }
+    }
+
+    img {
+      border-radius: 5px;
+    }
+  }
+}

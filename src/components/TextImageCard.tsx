@@ -4,7 +4,7 @@ import React from "react";
 
 type TextImageCardProps = {
   header: React.ReactNode;
-  content: React.ReactNode;
+  children: React.ReactNode;
   button_text: string;
   onClick: () => void;
   image: string;
@@ -13,7 +13,7 @@ type TextImageCardProps = {
 
 export default function TextImageCard({
   header,
-  content,
+  children,
   button_text,
   onClick,
   image,
@@ -24,7 +24,7 @@ export default function TextImageCard({
       <div className="side">
         <h1>{header}</h1>
 
-        <p>{content}</p>
+        <p>{children}</p>
 
         <CustomButton onClick={onClick} color={primaryColor}>
           {button_text}
@@ -40,7 +40,7 @@ export default function TextImageCard({
       <div className="side">
         <h1>{header}</h1>
 
-        <p>{content}</p>
+        <p>{children}</p>
 
         <CustomButton onClick={onClick} color={primaryColor}>
           {button_text}

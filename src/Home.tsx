@@ -62,20 +62,15 @@ export default function Home() {
                 <span style={{ color: secondaryColor }}>HISTORY</span>
               </>
             }
-            content={
-              <>
-                Because the right cookware,
-                <br />
-                <span style={{ fontWeight: "590" }}>
-                  makes all the difference.
-                </span>
-              </>
-            }
             image={"public/images/cookware-history.jpg"}
             onClick={() => navigate("/history")}
             button_text="LEARN MORE"
             reverse={false}
-          />
+          >
+            Because the right cookware,
+            <br />
+            <span style={{ fontWeight: "590" }}>makes all the difference.</span>
+          </TextImageCard>
 
           {/* card 2 */}
           <TextImageCard
@@ -85,19 +80,16 @@ export default function Home() {
                 <span style={{ color: secondaryColor }}>INSPIRATIONS</span>
               </>
             }
-            content={
-              <>
-                Retain up to{" "}
-                <span style={{ fontWeight: "590" }}>93% of nutrients</span>
-                <br />
-                with effortless cooking.
-              </>
-            }
             image={"public/images/recipe-inspirations.jpg"}
             onClick={() => navigate("/history")}
             button_text="START COOKING"
             reverse={true}
-          />
+          >
+            Retain up to{" "}
+            <span style={{ fontWeight: "590" }}>93% of nutrients</span>
+            <br />
+            with effortless cooking.
+          </TextImageCard>
 
           {/* card 1 */}
           <TextImageCard
@@ -107,27 +99,24 @@ export default function Home() {
                 <span style={{ color: secondaryColor }}>PRODUCTS</span>
               </>
             }
-            content={
-              <>
-                Our{" "}
-                <span style={{ fontWeight: "590" }}>
-                  316Ti Stainless Steel cookware
-                </span>
-                ,
-                <br />
-                made in the USA with premium materials,
-                <br /> is{" "}
-                <span style={{ fontWeight: "590" }}>
-                  designed for a lifetime of cooking
-                </span>
-                .
-              </>
-            }
             image={"public/images/explore-products.jpg"}
             onClick={() => navigate("/history")}
             button_text="VIEW PRODUCTS"
             reverse={false}
-          />
+          >
+            Our{" "}
+            <span style={{ fontWeight: "590" }}>
+              316Ti Stainless Steel cookware
+            </span>
+            ,
+            <br />
+            made in the USA with premium materials,
+            <br /> is{" "}
+            <span style={{ fontWeight: "590" }}>
+              designed for a lifetime of cooking
+            </span>
+            .
+          </TextImageCard>
         </section>
 
         <section className="review-gallery-container">
