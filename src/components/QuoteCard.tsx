@@ -19,9 +19,9 @@ export default function QuoteCard({
         <h1>{header}</h1>
 
         <p>
-          <img className="quote" src="public/icons/quote-left.svg" />
+          <img className="quote" src="/icons/quote-left.svg" />
           {children}
-          <img className="quote" src="public/icons/quote-right.svg" />
+          <img className="quote" src="/icons/quote-right.svg" />
         </p>
       </div>
 
@@ -35,9 +35,9 @@ export default function QuoteCard({
         <h1>{header}</h1>
 
         <p>
-          <img className="quote" src="public/icons/quote-left.svg" />
+          <img className="quote" src="/icons/quote-left.svg" />
           {children}
-          <img className="quote" src="public/icons/quote-right.svg" />
+          <img className="quote" src="/icons/quote-right.svg" />
         </p>
       </div>
     </div>

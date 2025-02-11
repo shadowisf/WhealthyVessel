@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="left">
           <h4>CONTACT US</h4>
 
-          <ContactUsInfo image="public/icons/email.svg">
+          <ContactUsInfo image="/icons/email.svg">
             <CustomAnchor
               href={"mailto:hello@whealthyvessel.com"}
               color={textColor}
@@ -18,13 +18,13 @@ export default function Footer() {
             </CustomAnchor>
           </ContactUsInfo>
 
-          <ContactUsInfo image="public/icons/phone.svg">
+          <ContactUsInfo image="/icons/phone.svg">
             <CustomAnchor href="tel:966566057406" color={textColor}>
               +966 56 605 7406
             </CustomAnchor>
           </ContactUsInfo>
 
-          <ContactUsInfo image="public/icons/map.svg">
+          <ContactUsInfo image="/icons/map.svg">
             <CustomAnchor
               href={"https://maps.app.goo.gl/NNKYmsoY4y6mcK7J6"}
               color={textColor}
@@ -35,7 +35,7 @@ export default function Footer() {
             </CustomAnchor>
           </ContactUsInfo>
 
-          <ContactUsInfo image="public/icons/tiktok.svg">
+          <ContactUsInfo image="/icons/tiktok.svg">
             <CustomAnchor
               href="https://www.tiktok.com/@whealthy.cooking"
               color={textColor}
@@ -45,7 +45,7 @@ export default function Footer() {
             </CustomAnchor>
           </ContactUsInfo>
 
-          <ContactUsInfo image="public/icons/facebook.svg">
+          <ContactUsInfo image="/icons/facebook.svg">
             <CustomAnchor
               href="https://www.facebook.com/share/12EwN2tWXUJ/?mibextid=wwXIfr"
               color={textColor}
@@ -59,7 +59,7 @@ export default function Footer() {
         <div className="right">
           <h4>PARTNERS</h4>
 
-          <img src="public/images/partners.png" />
+          <img src="/images/partners.png" />
         </div>
       </div>
 

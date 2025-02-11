@@ -21,14 +21,14 @@ export default function ReviewCard({
         {Array(stars)
           .fill(0)
           .map((_, index) => (
-            <img key={index} className="star" src="public/icons/star.svg" />
+            <img key={index} className="star" src="/icons/star.svg" />
           ))}
       </div>
 
       <p>
-        <img className="quote left" src="public/icons/quote-left.svg" />
+        <img className="quote left" src="/icons/quote-left.svg" />
         {content}
-        <img className="quote" src="public/icons/quote-right.svg" />
+        <img className="quote" src="/icons/quote-right.svg" />
       </p>
     </div>
   );
