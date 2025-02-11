@@ -56,7 +56,7 @@ export default function History() {
                 </h1>
               </>
             }
-            image="public/images/profile1.jpg"
+            image="/images/harry-lemmons.jpg"
             reverse={false}
           >
             If you eat right, and you prepare your food right, you have a much
@@ -72,7 +72,7 @@ export default function History() {
                 </h1>
               </>
             }
-            image="public/images/james-reigle.jpg"
+            image="/images/james-reigle.jpg"
             reverse={true}
           >
             The strength of our past is the story of who we are today and the
@@ -85,7 +85,7 @@ export default function History() {
             SALADMASTER <span style={{ color: secondaryColor }}>TIMELINE</span>
           </h1>
 
-          <img src="public/images/timeline.jpg" />
+          <img src="/images/timeline.jpg" />
         </section>
       </main>
     </>

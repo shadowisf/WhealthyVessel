@@ -30,7 +30,7 @@ export default function Home() {
           </p>
         </div>
 
-        <video src="public/videos/intro.mp4" autoPlay loop />
+        <video src="/videos/intro.mp4" autoPlay loop />
       </div>
 
       <main style={{ marginBottom: "100px" }}>
@@ -59,7 +59,7 @@ export default function Home() {
                 <span style={{ color: secondaryColor }}>HISTORY</span>
               </>
             }
-            image={"public/images/cookware-history.jpg"}
+            image={"/images/cookware-history.jpg"}
             href="/history"
             button_text="LEARN MORE"
             reverse={false}
@@ -77,7 +77,7 @@ export default function Home() {
                 <span style={{ color: secondaryColor }}>INSPIRATIONS</span>
               </>
             }
-            image={"public/images/recipe-inspirations.jpg"}
+            image={"/images/recipe-inspirations.jpg"}
             href="/recipes"
             button_text="START COOKING"
             reverse={true}
@@ -96,7 +96,7 @@ export default function Home() {
                 <span style={{ color: secondaryColor }}>PRODUCTS</span>
               </>
             }
-            image={"public/images/explore-products.jpg"}
+            image={"/images/explore-products.jpg"}
             href="/products"
             button_text="VIEW PRODUCTS"
             reverse={false}
@@ -135,7 +135,7 @@ export default function Home() {
         Plus, the quality of the titanium is top-notch – non-stick, durable, and
         eco-friendly. I highly recommend Whealthy Vessel for anyone looking to
         make healthier meals with quality cookware!"
-              profile_image="public/images/josiah-erum.jpeg"
+              profile_image="/images/josiah-erum.jpeg"
               stars={5}
               name="Josiah Erum"
             />
@@ -147,7 +147,7 @@ export default function Home() {
 The staff is knowledgeable and helpful, answering all my questions about the benefits of Saladmaster cookwares. I love how their products promote even heating and long-lasting performance. Definitely a must-visit for anyone looking to upgrade their kitchen with top-notch cookware!
 
 Highly recommend!"
-              profile_image="public/images/jainey-erum.jpeg"
+              profile_image="/images/jainey-erum.jpeg"
               stars={5}
               name="Jainey Erum"
             />

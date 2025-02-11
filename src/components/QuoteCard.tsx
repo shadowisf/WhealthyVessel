@@ -29,7 +29,7 @@ export default function QuoteCard({
     </div>
   ) : (
     <div className="individual-quote-card-container">
-      <img src={image} style={{ width: "500px" }} />
+      <img src={image} />
 
       <div className="side">
         <h1>{header}</h1>
