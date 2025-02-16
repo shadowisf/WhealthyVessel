@@ -9,11 +9,8 @@ import Footer from "./components/Footer.tsx";
 import ScrollToTop from "./utils/scrollToTop.ts";
 import YouAreLost from "./pages/YouAreLost.tsx";
 import Recipes from "./pages/Recipes.tsx";
-import { recipes } from "./utils/GODMODE.ts";
+import { allRecipes, recipes } from "./utils/GODMODE.ts";
 import RecipeTemplate from "./components/RecipeTemplate.tsx";
-
-// Get all recipe names
-const allRecipes = Object.keys(recipes);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -31,8 +28,6 @@ createRoot(document.getElementById("root")!).render(
 
         {allRecipes.map((recipe) => {
           const cleanName = recipe.replace(/ /g, "-").toLowerCase();
-          console.log(allRecipes);
-          console.log(cleanName);
 
           return (
             <Route
@@ -52,7 +47,6 @@ createRoot(document.getElementById("root")!).render(
           );
         })}
 
-        {/* 404 route */}
         <Route path="*" element={<YouAreLost />} />
       </Routes>
 
