@@ -59,7 +59,10 @@ export default function Footer() {
         <div className="right">
           <h4>PARTNERS</h4>
 
-          <img src="/images/partners.png" />
+          <div className="partner-container">
+            <img src="/images/partners-1.png" />
+            <img src="/images/partners-2.png" />
+          </div>
         </div>
       </div>
 

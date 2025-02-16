@@ -13,10 +13,10 @@ export default function Home() {
     <>
       <div
         style={{ marginTop: "125px", marginBottom: "100px" }}
-        className="video-container"
+        className="video-text-container"
       >
-        <div className="video-text-container">
-          <p className="location">Saladmaster, Jeddah</p>
+        <div className="text-container">
+          <p style={{ fontWeight: "bolder" }}>Saladmaster, Jeddah</p>
 
           <h1 style={{ fontFamily: "Plus Jakarta Sans" }}>
             Change Your Cookware.
@@ -30,11 +30,18 @@ export default function Home() {
           </p>
         </div>
 
-        <video src="/videos/intro.mp4" autoPlay loop />
+        <video
+          style={{ pointerEvents: "none" }}
+          src="/videos/intro.mp4"
+          autoPlay
+          loop
+          muted
+          controls={false}
+        />
       </div>
 
       <main style={{ marginBottom: "100px" }}>
-        <section className="text-container">
+        <section className="about-us-container">
           <h1 style={{ color: primaryColor }}>
             <span>ABOUT</span> <span style={{ color: secondaryColor }}>US</span>
           </h1>

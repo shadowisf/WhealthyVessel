@@ -23,14 +23,12 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans-VariableFont_wdth,wght.ttf")
-    format("truetype");
+  src: url("/fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Plus Jakarta Sans";
-  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
 }
 
 * {
@@ -51,6 +49,38 @@ main {
 
   margin: auto;
   max-width: 75%;
+}
+
+img {
+  pointer-events: none;
+  border-radius: 5px;
+}
+
+button,
+.anchor-button {
+  padding: 10px 15px;
+  width: fit-content;
+
+  appearance: none;
+  border: none;
+  color: var(--text-color);
+  text-decoration: none;
+
+  border-radius: 5px;
+
+  font-size: var(--font-size-xs);
+  font-weight: 599;
+
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "KC Obra Letra";
+  font-size: var(--font-size-xxl);
+}
+
+p {
+  line-height: 1.6;
 }
 
 .topbar-container {
@@ -135,13 +165,13 @@ main {
   }
 }
 
-.video-container {
+.video-text-container {
   width: 100%;
   height: 650px;
   overflow: hidden;
   position: relative;
 
-  .video-text-container {
+  .text-container {
     padding: 75px 30px;
     background-color: rgba(0, 0, 0, 0.25);
     top: 0;
@@ -161,10 +191,6 @@ main {
 
     padding-top: 200px;
 
-    .location {
-      font-weight: bolder;
-    }
-
     h1 {
       font-size: var(--font-size-xxxl);
       font-weight: bolder;
@@ -179,7 +205,7 @@ main {
   }
 }
 
-.text-container {
+.about-us-container {
   display: flex;
   flex-direction: column;
 
@@ -225,33 +251,6 @@ main {
       }
     }
   }
-}
-
-button,
-.anchor-button {
-  padding: 10px 15px;
-  width: fit-content;
-
-  appearance: none;
-  border: none;
-  color: var(--text-color);
-  text-decoration: none;
-
-  border-radius: 5px;
-
-  font-size: var(--font-size-xs);
-  font-weight: 599;
-
-  cursor: pointer;
-}
-
-h1 {
-  font-family: "KC Obra Letra";
-  font-size: var(--font-size-xxl);
-}
-
-p {
-  line-height: 1.6;
 }
 
 .review-gallery-container {
@@ -381,11 +380,19 @@ p {
     flex-direction: column;
     gap: 25px;
 
-    img {
-      width: 600px;
-      background-color: rgb(0, 0, 0, 0.25);
-      padding: 25px;
-      border-radius: 5px;
+    .partner-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+
+      img {
+        width: 350px;
+        height: 275px;
+        background-color: rgb(0, 0, 0, 0.25);
+        padding: 25px;
+        border-radius: 5px;
+      }
     }
   }
 }
@@ -460,9 +467,74 @@ p {
         margin-left: 7.5px;
       }
     }
-
-    img {
-      border-radius: 5px;
-    }
   }
+}
+
+.recipe-banner-container {
+  position: relative;
+  width: 100%;
+  height: 425px;
+  overflow: hidden;
+
+  div {
+    position: absolute;
+    top: 350px;
+    margin-left: 12%;
+    color: white;
+    z-index: 1;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 750px;
+  }
+}
+
+.recipe-row {
+  display: flex;
+
+  & > div {
+    flex: 1;
+  }
+}
+
+.recipe-card-container {
+  border: rgba(0, 0, 0, 0.25) 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  p {
+    font-weight: 590;
+  }
+
+  img {
+    width: 200px;
+  }
+}
+
+.recipe-gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
