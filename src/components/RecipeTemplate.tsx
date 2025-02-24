@@ -6,7 +6,7 @@ type RecipeTemplateProps = {
   product_name: string | string[];
   product_image: string | string[];
   ingredients: string[];
-  instructions: string;
+  instructions: string[];
 };
 
 export default function RecipeTemplate({
@@ -51,7 +51,11 @@ export default function RecipeTemplate({
 
           <div>
             <h2 style={{ color: primaryColor }}>INSTRUCTIONS:</h2>
-            <p>{instructions}</p>
+            <ol style={{ marginLeft: "25px" }}>
+              {instructions.map((instruction, index) => (
+                <li key={index}>{instruction}</li>
+              ))}
+            </ol>
           </div>
         </div>
 
