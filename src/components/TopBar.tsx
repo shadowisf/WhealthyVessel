@@ -59,9 +59,18 @@ export default function TopBar() {
 
         <div className="language-container">
           <select>
-            <option value="en">🇺🇸 ENGLISH (UNITED STATES)</option>
-            <option value="ar">🇸🇦 ARABIC (SAUDIA ARABIA)</option>
+            <option value="en">🇺🇸 ENGLISH</option>
+            <option value="ar">🇸🇦 ARABIC</option>
           </select>
+        </div>
+
+        <div className="hamburger-container">
+          <CustomAnchorWithImage
+            color={textColor}
+            onClick={() => console.log("clicked")}
+            image="/icons/hamburger.svg"
+            width="24px"
+          />
         </div>
       </nav>
     </div>

@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 
 type CustomAnchorWithImageProps = {
-  href: string;
+  href?: string;
   color: string;
   children?: React.ReactNode;
   className?: string;
   image: string;
   width: string;
+  onClick?: () => void;
 };
 
 export default function CustomAnchorWithImage({
@@ -16,6 +17,7 @@ export default function CustomAnchorWithImage({
   className,
   image,
   width,
+  onClick,
 }: CustomAnchorWithImageProps) {
   return (
     <Link
@@ -27,8 +29,9 @@ export default function CustomAnchorWithImage({
         alignItems: "center",
         gap: "7px",
       }}
-      to={href}
-      target="_blank"
+      to={href ? href : ""}
+      target={href ? "_blank" : ""}
+      onClick={onClick}
     >
       <img style={{ width: width }} src={image} />
       {children ? <span>{children}</span> : null}
