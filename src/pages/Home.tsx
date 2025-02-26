@@ -4,10 +4,28 @@ import ReviewCard from "../components/ReviewCard";
 import CustomButton from "../components/CustomButton";
 import PhoneInput from "react-phone-number-input";
 import { useState } from "react";
+import Carousel from "../components/Carousel";
+
 import "react-phone-number-input/style.css";
 
 export default function Home() {
   const [value, setValue] = useState("");
+
+  const review1 = {
+    content:
+      "I recently tried to cook some healthy food dishes using Saladmaster Titanium Cookwares from Whealthy Vessel, and I am thoroughly impressed! The cookware not only ensures that the food is cooked evenly and perfectly, but it also retains the nutrients, keeping the meals healthy and delicious. I tried a variety of dishes, from sautéed vegetables to lean meats, and each one turned out flavorful without any unnecessary oils. It's clear that these cookware pieces are designed with health in mind. Plus, the quality of the titanium is top-notch – non-stick, durable, and eco-friendly. I highly recommend Whealthy Vessel for anyone looking to make healthier meals with quality cookware!",
+    profile_image: "/images/jo-e.jpeg",
+    stars: 5,
+    name: "Josiah",
+  };
+
+  const review2 = {
+    content:
+      "Whealthy Vessel is an amazing place for premium Saladmaster (titanium) cookwares! The quality of their products is outstanding—durable, stylish, and perfect for healthy cooking. The display is beautifully arranged, making it easy to browse their selection of pots, pans, and kitchen essentials. The staff is knowledgeable and helpful, answering all my questions about the benefits of Saladmaster cookwares. I love how their products promote even heating and long-lasting performance. Definitely a must-visit for anyone looking to upgrade their kitchen with top-notch cookware! Highly recommend!",
+    profile_image: "/images/ja-e.jpeg",
+    stars: 5,
+    name: "Jainey",
+  };
 
   return (
     <>
@@ -41,6 +59,7 @@ export default function Home() {
       </div>
 
       <main style={{ marginBottom: "100px" }}>
+        {/* about us */}
         <section className="about-us-container">
           <h1 style={{ color: primaryColor }}>
             <span>ABOUT</span> <span style={{ color: secondaryColor }}>US</span>
@@ -57,8 +76,8 @@ export default function Home() {
           </p>
         </section>
 
-        {/* card 1 */}
         <section className="text-image-card-container">
+          {/* cookware history */}
           <TextImageCard
             header={
               <>
@@ -71,12 +90,11 @@ export default function Home() {
             button_text="LEARN MORE"
             reverse={false}
           >
-            Because the right cookware,
-            <br />
+            Because the right cookware,{" "}
             <span style={{ fontWeight: "590" }}>makes all the difference.</span>
           </TextImageCard>
 
-          {/* card 2 */}
+          {/* recipe inspirations */}
           <TextImageCard
             header={
               <>
@@ -90,12 +108,11 @@ export default function Home() {
             reverse={true}
           >
             Retain up to{" "}
-            <span style={{ fontWeight: "590" }}>93% of nutrients</span>
-            <br />
-            with effortless cooking.
+            <span style={{ fontWeight: "590" }}>93% of nutrients</span> with
+            effortless cooking.
           </TextImageCard>
 
-          {/* card 1 */}
+          {/* our products */}
           <TextImageCard
             header={
               <>
@@ -112,10 +129,7 @@ export default function Home() {
             <span style={{ fontWeight: "590" }}>
               316Ti Stainless Steel cookware
             </span>
-            ,
-            <br />
-            made in the USA with premium materials,
-            <br /> is{" "}
+            , made in the USA with premium materials, is{" "}
             <span style={{ fontWeight: "590" }}>
               designed for a lifetime of cooking
             </span>
@@ -123,53 +137,41 @@ export default function Home() {
           </TextImageCard>
         </section>
 
+        {/* reviews */}
         <section className="review-gallery-container">
           <h1 style={{ color: primaryColor }}>
             OUR <span style={{ color: secondaryColor }}>TESTIMONIALS</span>
           </h1>
 
-          <div className="review-card-container">
-            {/* review 1 */}
+          <br />
+
+          <Carousel>
             <ReviewCard
-              content="I recently
-        tried to cook some healthy food dishes using Saladmaster Titanium
-        Cookwares from Whealthy Vessel, and I am thoroughly impressed! The
-        cookware not only ensures that the food is cooked evenly and perfectly,
-        but it also retains the nutrients, keeping the meals healthy and
-        delicious. I tried a variety of dishes, from sautéed vegetables to lean
-        meats, and each one turned out flavorful without any unnecessary oils.
-        It's clear that these cookware pieces are designed with health in mind.
-        Plus, the quality of the titanium is top-notch – non-stick, durable, and
-        eco-friendly. I highly recommend Whealthy Vessel for anyone looking to
-        make healthier meals with quality cookware!"
-              profile_image="/images/josiah-erum.jpeg"
-              stars={5}
-              name="Josiah Erum"
+              content={review1.content}
+              profile_image={review1.profile_image}
+              stars={review1.stars}
+              name={review1.name}
             />
-
-            {/* review 2 */}
             <ReviewCard
-              content="Whealthy Vessel is an amazing place for premium Saladmaster (titanium) cookwares! The quality of their products is outstanding—durable, stylish, and perfect for healthy cooking. The display is beautifully arranged, making it easy to browse their selection of pots, pans, and kitchen essentials.
-
-The staff is knowledgeable and helpful, answering all my questions about the benefits of Saladmaster cookwares. I love how their products promote even heating and long-lasting performance. Definitely a must-visit for anyone looking to upgrade their kitchen with top-notch cookware!
-
-Highly recommend!"
-              profile_image="/images/jainey-erum.jpeg"
-              stars={5}
-              name="Jainey Erum"
+              content={review2.content}
+              profile_image={review2.profile_image}
+              stars={review2.stars}
+              name={review2.name}
             />
-          </div>
+          </Carousel>
         </section>
 
+        {/* reach out */}
         <section className="reach-out-container">
           <h1 style={{ color: primaryColor }}>
-            REACH OUT -<br />
-            <span style={{ color: secondaryColor }}>WE'RE JUST AN</span>
-            <br />
+            REACH OUT -{" "}
+            <span style={{ color: secondaryColor }}>WE'RE JUST AN</span>{" "}
             <span style={{ color: secondaryColor }}>EMAIL AWAY!</span>
           </h1>
 
           <form className="form-container">
+            <br />
+
             <div className="name-phone-container">
               <input placeholder="Name" type="text" required />
 

@@ -11,6 +11,7 @@ import YouAreLost from "./pages/YouAreLost.tsx";
 import Recipes from "./pages/Recipes.tsx";
 import { allRecipes, recipes } from "./utils/GODMODE.ts";
 import RecipeTemplate from "./components/RecipeTemplate.tsx";
+import Products from "./pages/Products.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -25,6 +26,8 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/history" element={<History />} />
 
         <Route path="/recipes" element={<Recipes />} />
+
+        <Route path="/products" element={<Products />} />
 
         {allRecipes.map((recipe) => {
           const cleanName = recipe.replace(/ /g, "-").toLowerCase();

@@ -24,6 +24,8 @@ export default function TextImageCard({
       <div className="side">
         <h1>{header}</h1>
 
+        <img className="mobile-image" src={image} />
+
         <p>{children}</p>
 
         <CustomButton href={href} color={primaryColor}>
@@ -31,14 +33,16 @@ export default function TextImageCard({
         </CustomButton>
       </div>
 
-      <img src={image} />
+      <img className="wide-image" src={image} />
     </div>
   ) : (
     <div className="individual-text-image-card-container">
-      <img src={image} />
+      <img className="wide-image" src={image} />
 
       <div className="side">
         <h1>{header}</h1>
+
+        <img className="mobile-image" src={image} />
 
         <p>{children}</p>
 
