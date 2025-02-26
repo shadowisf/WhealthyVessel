@@ -13,13 +13,18 @@ export default function Footer() {
             <CustomAnchor
               href={"mailto:hello@whealthyvessel.com"}
               color={textColor}
+              target="_blank"
             >
               hello@whealthyvessel.com
             </CustomAnchor>
           </ContactUsInfo>
 
           <ContactUsInfo image="/icons/phone.svg">
-            <CustomAnchor href="tel:966566057406" color={textColor}>
+            <CustomAnchor
+              href="tel:966566057406"
+              color={textColor}
+              target="_blank"
+            >
               +966 56 605 7406
             </CustomAnchor>
           </ContactUsInfo>
@@ -67,7 +72,20 @@ export default function Footer() {
       </div>
 
       <div className="rights-reserved-container">
-        2025 WHEALTHY VESSEL, INC. ALL RIGHTS RESERVED.
+        <p>2025 WHEALTHY VESSEL, INC. ALL RIGHTS RESERVED.</p>
+
+        <br />
+
+        <p>
+          WEB DEVELOPER:{" "}
+          <CustomAnchor
+            href={"https://www.linkedin.com/in/ranalan/"}
+            color={"black"}
+            target="_blank"
+          >
+            LES PAUL RANALAN{" "}
+          </CustomAnchor>
+        </p>
       </div>
     </>
   );

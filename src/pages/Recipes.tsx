@@ -29,14 +29,16 @@ export default function Recipes() {
         <section className="recipe-filter-container">
           <CustomButton
             onClick={() => scrollToRef(entreeRef)}
-            color={primaryColor}
+            backgroundColor={primaryColor}
+            color="white"
           >
             ENTREE
           </CustomButton>
 
           <CustomButton
             onClick={() => scrollToRef(dessertRef)}
-            color={primaryColor}
+            backgroundColor={primaryColor}
+            color="white"
           >
             DESSERT
           </CustomButton>

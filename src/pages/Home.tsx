@@ -191,7 +191,11 @@ export default function Home() {
               onChange={(e) => setMessage(e.target.value)}
             />
 
-            <CustomButton onClick={() => {}} color={primaryColor}>
+            <CustomButton
+              onClick={() => {}}
+              backgroundColor={primaryColor}
+              color={"black"}
+            >
               GET IN TOUCH
             </CustomButton>
           </form>

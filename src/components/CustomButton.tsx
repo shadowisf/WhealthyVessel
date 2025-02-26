@@ -5,6 +5,7 @@ type CustomButtonProps = {
   onClick?: () => void;
   color: string;
   href?: string;
+  backgroundColor: string;
 };
 
 export default function CustomButton({
@@ -12,17 +13,21 @@ export default function CustomButton({
   onClick,
   color,
   href,
+  backgroundColor,
 }: CustomButtonProps) {
   return href ? (
     <Link
       className="anchor-button"
-      style={{ backgroundColor: `${color}` }}
+      style={{ backgroundColor: `${backgroundColor}`, color: `${color}` }}
       to={href}
     >
       {children}
     </Link>
   ) : (
-    <button style={{ backgroundColor: `${color}` }} onClick={onClick}>
+    <button
+      style={{ backgroundColor: `${backgroundColor}`, color: `${color}` }}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

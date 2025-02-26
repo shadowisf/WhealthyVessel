@@ -5,7 +5,7 @@ type CustomAnchorProps = {
   color: string;
   children: React.ReactNode;
   className?: string;
-  target?: string;
+  target: string;
 };
 
 export default function CustomAnchor({

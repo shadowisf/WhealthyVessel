@@ -28,7 +28,11 @@ export default function TextImageCard({
 
         <p>{children}</p>
 
-        <CustomButton href={href} color={primaryColor}>
+        <CustomButton
+          href={href}
+          backgroundColor={primaryColor}
+          color={"black"}
+        >
           {button_text}
         </CustomButton>
       </div>
@@ -46,7 +50,11 @@ export default function TextImageCard({
 
         <p>{children}</p>
 
-        <CustomButton href={href} color={primaryColor}>
+        <CustomButton
+          href={href}
+          backgroundColor={primaryColor}
+          color={"black"}
+        >
           {button_text}
         </CustomButton>
       </div>
