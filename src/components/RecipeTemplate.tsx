@@ -23,25 +23,16 @@ export default function RecipeTemplate({
         className="recipe-banner-container"
         style={{ marginTop: "125px", marginBottom: "100px" }}
       >
-        <div>
-          <h1>{recipe_name}</h1>
-          <p>
-            <span style={{ color: secondaryColor, fontWeight: "bolder" }}>
-              PRODUCT/S:
-            </span>{" "}
-            {Array.isArray(product_name)
-              ? product_name.join(", ")
-              : product_name}
-          </p>
-        </div>
+        <h1>{recipe_name}</h1>
 
         <img src={recipe_image} />
       </section>
 
       <main style={{ marginBottom: "100px" }}>
-        <div className="recipe-row">
+        <section className="ingredients-instructions-container">
           <div>
-            <h2 style={{ color: primaryColor }}>INGREDIENTS:</h2>
+            <h1 style={{ color: primaryColor }}>INGREDIENTS:</h1>
+
             <p>
               {ingredients.map((ingredient, index) => (
                 <li key={index}>{ingredient}</li>
@@ -50,30 +41,38 @@ export default function RecipeTemplate({
           </div>
 
           <div>
-            <h2 style={{ color: primaryColor }}>INSTRUCTIONS:</h2>
+            <h1 style={{ color: primaryColor }}>INSTRUCTIONS:</h1>
             <ol style={{ marginLeft: "25px" }}>
               {instructions.map((instruction, index) => (
                 <li key={index}>{instruction}</li>
               ))}
             </ol>
           </div>
-        </div>
+        </section>
 
-        <div className="recipe-image-container">
-          {Array.isArray(product_image) && Array.isArray(product_name) ? (
-            product_image.map((image, index) => (
-              <div key={index}>
-                <img src={image} />
-                <p>{product_name[index]}</p>
+        <section className="products-used-container">
+          <h1 style={{ color: primaryColor }}>
+            PRODUCT/S <span style={{ color: secondaryColor }}>USED:</span>
+          </h1>
+
+          <br />
+
+          <div className="products-used-gallery-container">
+            {Array.isArray(product_image) && Array.isArray(product_name) ? (
+              product_image.map((image, index) => (
+                <div className="individual-product-container" key={index}>
+                  <img src={image} />
+                  <p>{product_name[index]}</p>
+                </div>
+              ))
+            ) : (
+              <div className="individual-product-container">
+                <img src={product_image as string} />
+                <p>{product_name}</p>
               </div>
-            ))
-          ) : (
-            <div className="image-container">
-              <img src={product_image as string} />
-              <p>{product_name}</p>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
+        </section>
       </main>
     </>
   );

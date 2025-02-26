@@ -22,11 +22,6 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("/fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Plus Jakarta Sans";
   src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
 }
@@ -171,7 +166,7 @@ p {
   }
 }
 
-.video-text-container {
+.home-banner-container {
   width: 100%;
   height: 650px;
   overflow: hidden;
@@ -179,7 +174,7 @@ p {
 
   .text-container {
     padding: 75px 30px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.25);
     top: 0;
     bottom: 0;
     position: absolute;
@@ -225,6 +220,7 @@ p {
 
 .text-image-card-container {
   display: grid;
+  place-items: center;
   gap: 50px;
 
   .individual-text-image-card-container {
@@ -269,6 +265,8 @@ p {
 
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.25);
+
+    max-width: 750px;
 
     .profile-image {
       width: 75px;
@@ -340,7 +338,6 @@ p {
   color: var(--text-color);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  place-items: center;
 
   .left {
     display: grid;
@@ -359,7 +356,6 @@ p {
 
   .right {
     display: grid;
-    gap: 25px;
 
     .partner-container {
       display: grid;
@@ -369,7 +365,6 @@ p {
 
       img {
         width: 275px;
-        height: 250px;
         background-color: rgb(255, 255, 255, 0.25);
         padding: 25px;
       }
@@ -452,58 +447,48 @@ p {
   }
 }
 
-.recipe-banner-container {
-  position: relative;
-  width: 100%;
-  height: 425px;
-  overflow: hidden;
+.products-used-container {
+  .products-used-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
 
-  div {
-    position: absolute;
-    top: 350px;
-    margin-left: 12%;
-    color: white;
-    z-index: 1;
+    .individual-product-container {
+      display: grid;
+      place-items: center;
+
+      padding: 20px;
+
+      img {
+        width: 300px;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
   }
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(50%);
-  }
-}
-
-.recipe-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-
-  img {
-    width: 300px;
-  }
-
-  p {
+  h1 {
     text-align: center;
   }
 }
 
-.recipe-row {
-  display: flex;
-
-  & > div {
-    flex: 1;
-  }
+.ingredients-instructions-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
 }
 
 .recipe-gallery-container {
   display: grid;
   place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
   gap: 25px;
-  grid-template-columns: repeat(3, 1fr);
 
-  .recipe-card-container {
+  .individual-recipe-card-container {
     position: relative;
 
     cursor: pointer;
@@ -530,6 +515,38 @@ p {
       height: 300px;
       object-fit: cover;
     }
+  }
+}
+
+.recipe-banner-container {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+    filter: brightness(50%);
+  }
+
+  h1 {
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 1;
+
+    font-family: "Plus Jakarta Sans";
+    font-size: var(--font-size-xxxxl);
+
+    padding: 0px 200px;
   }
 }
 
@@ -561,8 +578,8 @@ p {
 
   .embla__controls {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 50px;
   }
 
@@ -582,6 +599,7 @@ p {
 
   .embla__dots {
     display: flex;
+    justify-content: center;
     gap: 8px;
     padding: 0 20px;
 
@@ -616,7 +634,7 @@ p {
     display: none;
   }
 
-  .video-text-container {
+  .home-banner-container {
     .text-container {
       left: 50px;
       right: 25px;
@@ -647,7 +665,7 @@ p {
     display: none;
   }
 
-  .video-text-container {
+  .home-banner-container {
     .text-container {
       width: 100%;
       height: 100%;
@@ -706,5 +724,17 @@ p {
     iframe {
       height: 350px;
     }
+  }
+
+  .recipe-banner-container {
+    h1 {
+      font-size: var(--font-size-xxxl);
+    }
+  }
+
+  .ingredients-instructions-container {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    gap: 125px;
   }
 }

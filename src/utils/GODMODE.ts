@@ -1,4 +1,5 @@
 type Recipe = {
+  tags: string;
   recipe_image: string;
   product_name: string | string[];
   product_image: string | string[];
@@ -9,6 +10,7 @@ type Recipe = {
 export const recipes: Record<string, Recipe> = {
   /* #1 */
   "HERBED ROASTED TURKEY": {
+    tags: "",
     recipe_image: "/images/recipes/herb-roasted-turkey.jpg",
     product_name: "12 Qt. Roaster",
     product_image: "/images/products/12-qt-roaster.png",
@@ -38,6 +40,7 @@ export const recipes: Record<string, Recipe> = {
 
   /* #2 */
   "VEGGIE LASAGNA": {
+    tags: "",
     recipe_image: "/images/recipes/veggie-lasagna.jpg",
     product_name: ["Food Processor", `12" Electric Oil Core Skillet`],
     product_image: [
@@ -78,6 +81,7 @@ export const recipes: Record<string, Recipe> = {
 
   /* #3 */
   "BRAISED PORK RIBS WITH VEGETABLES": {
+    tags: "",
     recipe_image: "/images/recipes/braised-pork-ribs-with-vegetables.jpg",
     product_name: [
       "Food Processor",
@@ -124,7 +128,8 @@ export const recipes: Record<string, Recipe> = {
   },
 
   /* #4 */
-  "SMOKEY PORK TENDERLOIN WITH GRILLED PINEAPPLE SALSA": {
+  "SMOKEY PORK TENDERLOIN & PINEAPPLE SALSA": {
+    tags: "",
     recipe_image:
       "/images/recipes/smoky-pork tenderloin-with-grilled-pineapple-salsa.jpg",
     product_name: ["Smokeless Broiler", "Large Mixing Bowl"],
@@ -161,6 +166,7 @@ export const recipes: Record<string, Recipe> = {
 
   /* #5 */
   "CHICKEN & COUSCOUS": {
+    tags: "",
     recipe_image: "/images/recipes/chicken-and-couscous.jpg",
     product_name: [
       "Saladmaster Food Processor",
@@ -213,6 +219,7 @@ export const recipes: Record<string, Recipe> = {
 
   /* #6 */
   "FRUIT SALAD": {
+    tags: "",
     recipe_image: "/images/recipes/fruit-salad.jpg",
     product_name: "Food Processor",
     product_image: "/images/products/food-processor.png",
@@ -244,6 +251,7 @@ export const recipes: Record<string, Recipe> = {
 
   /* #7 */
   "CAJUN RICE & SHRIMP": {
+    tags: "",
     recipe_image: "/images/recipes/cajun-rice-and-shrimp.jpg",
     product_name: ["Food Processor", `12" Chef's Gourmet Skillet`],
     product_image: [
@@ -279,7 +287,8 @@ export const recipes: Record<string, Recipe> = {
 
   /* #8 */
   "UNFRIED CHICKEN": {
-    recipe_image: "/images/recipes/unfried-chicken.jpg",
+    tags: "",
+    recipe_image: "/images/recipes/unfried-chicken.jpeg",
     product_name: [`12" Electric Oil Core Skillet`],
     product_image: "/images/products/12-electric-oil-core-skillet.png",
     ingredients: ["12 chicken thighs, boneless, skinless"],
@@ -294,6 +303,7 @@ export const recipes: Record<string, Recipe> = {
 
   /* #9 */
   "ORANGE GINGER STIR-FRY": {
+    tags: "",
     recipe_image: "/images/recipes/orange-ginger-stir-fry.jpg",
     product_name: [
       "Saladmaster Food Processor",
@@ -341,6 +351,7 @@ export const recipes: Record<string, Recipe> = {
 
   /* #10 */
   "LEMON GARLIC SHRIMP & QUINOA": {
+    tags: "",
     recipe_image: "/images/recipes/garlic-lemon-shrimp-&-quinoa.jpg",
     product_name: ['11" Large Skillet with Cover'],
     product_image: "/images/products/12-electric-oil-core-skillet.png",
@@ -374,6 +385,7 @@ export const recipes: Record<string, Recipe> = {
 
   /* #11 */
   "TRIPLE CHOCOLATE CHEESECAKE": {
+    tags: "",
     recipe_image: "/images/recipes/triple-chocolate-cheesecake.jpg",
     product_name: [
       "Saladmaster Food Processor",
@@ -420,6 +432,7 @@ export const recipes: Record<string, Recipe> = {
 
   /* #12 */
   "CHOCOLATE BROWNIE CAKE": {
+    tags: "",
     recipe_image: "/images/recipes/chocolate-brownie-cake.jpg",
     product_name: ["Saladmaster Food Processor", '9" Small Skillet with Cover'],
     product_image: [

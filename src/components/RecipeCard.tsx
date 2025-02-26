@@ -12,7 +12,7 @@ export default function RecipeCard({
   children,
 }: RecipeCardProps) {
   return (
-    <Link to={href} className="recipe-card-container">
+    <Link to={href} className="individual-recipe-card-container">
       <img src={recipe_image} />
       <p>{children}</p>
     </Link>

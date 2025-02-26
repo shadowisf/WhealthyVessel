@@ -33,9 +33,9 @@ export default function Home() {
 
   return (
     <>
-      <div
+      <section
         style={{ marginTop: "125px", marginBottom: "100px" }}
-        className="video-text-container"
+        className="home-banner-container"
       >
         <div className="text-container">
           <p style={{ fontWeight: "bolder" }}>Saladmaster, Jeddah</p>
@@ -60,7 +60,7 @@ export default function Home() {
           muted
           controls={false}
         />
-      </div>
+      </section>
 
       <main style={{ marginBottom: "100px" }}>
         {/* about us */}
