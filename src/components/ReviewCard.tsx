@@ -25,11 +25,7 @@ export default function ReviewCard({
           ))}
       </div>
 
-      <p>
-        <img className="quote left" src="/icons/quote-left.svg" />
-        {content}
-        <img className="quote" src="/icons/quote-right.svg" />
-      </p>
+      <p>"{content}"</p>
     </div>
   );
 }
