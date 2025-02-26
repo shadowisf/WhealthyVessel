@@ -11,8 +11,6 @@ export default function History() {
         </h1>
 
         <iframe
-          width="100%"
-          height="534"
           src="https://www.youtube.com/embed/1ucCoCygirw"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         />
@@ -85,6 +83,16 @@ export default function History() {
         </h1>
 
         <img src="/images/timeline.jpg" />
+      </section>
+
+      <section className="mapchart-container">
+        <h1 style={{ color: primaryColor }}>
+          SALADMASTER <span style={{ color: secondaryColor }}>MAP CHART</span>
+        </h1>
+
+        <br />
+
+        <img src="/images/mapchart.png" />
       </section>
     </main>
   );

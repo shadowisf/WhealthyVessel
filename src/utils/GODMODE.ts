@@ -294,7 +294,7 @@ export const recipes: Record<string, Recipe> = {
 
   /* #9 */
   "ORANGE GINGER STIR-FRY": {
-    recipe_image: "/images/recipes/orange-ginger-stir-fry.JPG",
+    recipe_image: "/images/recipes/orange-ginger-stir-fry.jpg",
     product_name: [
       "Saladmaster Food Processor",
       "5 Qt./4.7 L Gourmet Wok with Cover",

@@ -7,7 +7,7 @@ export default function TopBar() {
     <div className="topbar-container">
       <div className="banner-container">
         <div className="left">
-          <CustomAnchor href={"/"} color={textColor}>
+          <CustomAnchor href={"#"} color={textColor}>
             WV Login
           </CustomAnchor>
         </div>
@@ -66,6 +66,7 @@ export default function TopBar() {
 
         <div className="hamburger-container">
           <CustomAnchorWithImage
+            href="javascript:void(0);"
             color={textColor}
             onClick={() => console.log("clicked")}
             image="/icons/hamburger.svg"

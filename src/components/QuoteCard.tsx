@@ -16,29 +16,25 @@ export default function QuoteCard({
   return reverse ? (
     <div className="individual-quote-card-container">
       <div className="side">
-        <h1>{header}</h1>
+        {header}
 
-        <p>
-          <img className="quote" src="/icons/quote-left.svg" />
-          {children}
-          <img className="quote" src="/icons/quote-right.svg" />
-        </p>
+        <img className="mobile-image" src={image} />
+
+        <p>"{children}"</p>
       </div>
 
-      <img src={image} />
+      <img className="wide-image" src={image} />
     </div>
   ) : (
     <div className="individual-quote-card-container">
-      <img src={image} />
+      <img className="wide-image" src={image} />
 
       <div className="side">
-        <h1>{header}</h1>
+        {header}
 
-        <p>
-          <img className="quote" src="/icons/quote-left.svg" />
-          {children}
-          <img className="quote" src="/icons/quote-right.svg" />
-        </p>
+        <img className="mobile-image" src={image} />
+
+        <p>"{children}"</p>
       </div>
     </div>
   );

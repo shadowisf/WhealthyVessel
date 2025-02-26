@@ -5,11 +5,15 @@ import CustomButton from "../components/CustomButton";
 import PhoneInput from "react-phone-number-input";
 import { useState } from "react";
 import Carousel from "../components/Carousel";
+import { E164Number } from "libphonenumber-js";
 
 import "react-phone-number-input/style.css";
 
 export default function Home() {
-  const [value, setValue] = useState("");
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState<E164Number | undefined>(undefined);
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const review1 = {
     content:
@@ -173,22 +177,40 @@ export default function Home() {
             <br />
 
             <div className="name-phone-container">
-              <input placeholder="Name" type="text" required />
+              <input
+                placeholder="Name"
+                type="text"
+                required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
 
               <PhoneInput
                 international
                 placeholder="Phone Number"
-                value={value}
-                /* @ts-ignore */
-                onChange={setValue}
+                value={number}
+                onChange={setNumber}
                 defaultCountry="SA"
                 style={{ width: "100%" }}
               />
             </div>
 
-            <input placeholder="E-Mail Address" type="email" required />
+            <input
+              placeholder="E-Mail Address"
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
 
-            <textarea placeholder="Message" name="message" rows={4} required />
+            <textarea
+              placeholder="Message"
+              name="message"
+              rows={4}
+              required
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
 
             <CustomButton onClick={() => {}} color={primaryColor}>
               GET IN TOUCH
