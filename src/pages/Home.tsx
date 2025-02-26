@@ -1,5 +1,5 @@
 import TextImageCard from "../components/TextImageCard";
-import { primaryColor, secondaryColor } from "../utils/readColors";
+import { primaryColor } from "../utils/readColors";
 import ReviewCard from "../components/ReviewCard";
 import CustomButton from "../components/CustomButton";
 import PhoneInput from "react-phone-number-input";
@@ -38,12 +38,12 @@ export default function Home() {
         className="home-banner-container"
       >
         <div className="text-container">
-          <p style={{ fontWeight: "bolder" }}>Saladmaster, Jeddah</p>
+          <p>Saladmaster, Jeddah</p>
 
-          <h1 style={{ fontFamily: "Plus Jakarta Sans" }}>
-            Change Your Cookware.
+          <h1>
+            CHANGE YOUR COOKWARE.
             <br />
-            Change Your Life
+            CHANGE YOUR LIFE
           </h1>
 
           <p>
@@ -52,21 +52,14 @@ export default function Home() {
           </p>
         </div>
 
-        <video
-          style={{ pointerEvents: "none" }}
-          src="/videos/intro.mp4"
-          autoPlay
-          loop
-          muted
-          controls={false}
-        />
+        <video src="/videos/intro.mp4" autoPlay loop muted controls={false} />
       </section>
 
       <main style={{ marginBottom: "100px" }}>
         {/* about us */}
         <section className="about-us-container">
-          <h1 style={{ color: primaryColor }}>
-            <span>ABOUT</span> <span style={{ color: secondaryColor }}>US</span>
+          <h1>
+            ABOUT <span>US</span>
           </h1>
 
           <p>
@@ -85,8 +78,7 @@ export default function Home() {
           <TextImageCard
             header={
               <>
-                <span style={{ color: primaryColor }}>COOKWARE</span>{" "}
-                <span style={{ color: secondaryColor }}>HISTORY</span>
+                COOKWARE <span>HISTORY</span>
               </>
             }
             image={"/images/cookware-history.jpg"}
@@ -94,16 +86,14 @@ export default function Home() {
             button_text="LEARN MORE"
             reverse={false}
           >
-            Because the right cookware,{" "}
-            <span style={{ fontWeight: "590" }}>makes all the difference.</span>
+            Because the right cookware, <span>makes all the difference.</span>
           </TextImageCard>
 
           {/* recipe inspirations */}
           <TextImageCard
             header={
               <>
-                <span style={{ color: primaryColor }}>RECIPE</span>{" "}
-                <span style={{ color: secondaryColor }}>INSPIRATIONS</span>
+                RECIPE <span>INSPIRATIONS</span>
               </>
             }
             image={"/images/recipe-inspirations.jpg"}
@@ -111,17 +101,14 @@ export default function Home() {
             button_text="START COOKING"
             reverse={true}
           >
-            Retain up to{" "}
-            <span style={{ fontWeight: "590" }}>93% of nutrients</span> with
-            effortless cooking.
+            Retain up to <span>93% of nutrients</span> with effortless cooking.
           </TextImageCard>
 
           {/* our products */}
           <TextImageCard
             header={
               <>
-                <span style={{ color: primaryColor }}>EXPLORE</span>{" "}
-                <span style={{ color: secondaryColor }}>PRODUCTS</span>
+                EXPLORE <span>PRODUCTS</span>
               </>
             }
             image={"/images/explore-products.jpg"}
@@ -129,22 +116,16 @@ export default function Home() {
             button_text="VIEW PRODUCTS"
             reverse={false}
           >
-            Our{" "}
-            <span style={{ fontWeight: "590" }}>
-              316Ti Stainless Steel cookware
-            </span>
-            , made in the USA with premium materials, is{" "}
-            <span style={{ fontWeight: "590" }}>
-              designed for a lifetime of cooking
-            </span>
-            .
+            Our <span>316Ti Stainless Steel cookware</span>, made in the USA
+            with premium materials, is{" "}
+            <span>designed for a lifetime of cooking</span>.
           </TextImageCard>
         </section>
 
         {/* reviews */}
         <section className="review-gallery-container">
-          <h1 style={{ color: primaryColor }}>
-            OUR <span style={{ color: secondaryColor }}>TESTIMONIALS</span>
+          <h1>
+            OUR <span>TESTIMONIALS</span>
           </h1>
 
           <br />
@@ -167,10 +148,8 @@ export default function Home() {
 
         {/* reach out */}
         <section className="reach-out-container">
-          <h1 style={{ color: primaryColor }}>
-            REACH OUT -{" "}
-            <span style={{ color: secondaryColor }}>WE'RE JUST AN</span>{" "}
-            <span style={{ color: secondaryColor }}>EMAIL AWAY!</span>
+          <h1>
+            REACH OUT - <span>WE'RE JUST AN EMAIL AWAY!</span>
           </h1>
 
           <form className="form-container">

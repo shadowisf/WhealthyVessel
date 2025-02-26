@@ -22,7 +22,7 @@ export default function CustomButton({
       {children}
     </Link>
   ) : (
-    <button style={{ backgroundColor: `${color}` }} onClick={() => onClick}>
+    <button style={{ backgroundColor: `${color}` }} onClick={onClick}>
       {children}
     </button>
   );

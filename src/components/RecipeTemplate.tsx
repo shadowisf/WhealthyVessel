@@ -1,5 +1,3 @@
-import { primaryColor, secondaryColor } from "../utils/readColors";
-
 type RecipeTemplateProps = {
   recipe_name: string;
   recipe_image: string;
@@ -31,8 +29,7 @@ export default function RecipeTemplate({
       <main style={{ marginBottom: "100px" }}>
         <section className="ingredients-instructions-container">
           <div>
-            <h1 style={{ color: primaryColor }}>INGREDIENTS:</h1>
-
+            <h1>INGREDIENTS:</h1>
             <p>
               {ingredients.map((ingredient, index) => (
                 <li key={index}>{ingredient}</li>
@@ -41,8 +38,8 @@ export default function RecipeTemplate({
           </div>
 
           <div>
-            <h1 style={{ color: primaryColor }}>INSTRUCTIONS:</h1>
-            <ol style={{ marginLeft: "25px" }}>
+            <h1>INSTRUCTIONS:</h1>
+            <ol>
               {instructions.map((instruction, index) => (
                 <li key={index}>{instruction}</li>
               ))}
@@ -51,8 +48,8 @@ export default function RecipeTemplate({
         </section>
 
         <section className="products-used-container">
-          <h1 style={{ color: primaryColor }}>
-            PRODUCT/S <span style={{ color: secondaryColor }}>USED:</span>
+          <h1>
+            PRODUCT/S <span>USED:</span>
           </h1>
 
           <br />

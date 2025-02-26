@@ -1,6 +1,7 @@
 import { textColor, primaryColor, secondaryColor } from "../utils/readColors";
 import CustomAnchor from "./CustomAnchor";
 import CustomAnchorWithImage from "./CustomAnchorWithImage";
+import CustomButtonWithImage from "./CustomButtonWithImage";
 
 export default function TopBar() {
   return (
@@ -36,7 +37,7 @@ export default function TopBar() {
           href={"/"}
         >
           <img src="/icons/logo.svg" alt="logo" />
-          <div className="logo-text-container">
+          <div>
             <span style={{ color: primaryColor }}>WHEALTHY </span>
             <span style={{ color: secondaryColor }}>VESSEL</span>
           </div>
@@ -59,16 +60,15 @@ export default function TopBar() {
 
         <div className="language-container">
           <select>
-            <option value="en">🇺🇸 ENGLISH</option>
-            <option value="ar">🇸🇦 ARABIC</option>
+            <option value="en">ENGLISH</option>
+            <option value="ar">ARABIC</option>
           </select>
         </div>
 
         <div className="hamburger-container">
-          <CustomAnchorWithImage
-            href="javascript:void(0);"
-            color={textColor}
-            onClick={() => console.log("clicked")}
+          <CustomButtonWithImage
+            onClick={() => {}}
+            color={"transparent"}
             image="/icons/hamburger.svg"
             width="24px"
           />

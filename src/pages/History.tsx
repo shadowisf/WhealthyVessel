@@ -1,13 +1,11 @@
 import QuoteCard from "../components/QuoteCard";
-import { primaryColor, secondaryColor } from "../utils/readColors";
 
 export default function History() {
   return (
     <main style={{ marginTop: "200px", marginBottom: "200px" }}>
       <section className="history-container">
-        <h1 style={{ color: primaryColor }}>
-          SEVEN DECADES OF{" "}
-          <span style={{ color: secondaryColor }}>MAKING LIFE BETTER</span>
+        <h1>
+          SEVEN DECADES OF <span>MAKING LIFE BETTER</span>
         </h1>
 
         <iframe
@@ -17,29 +15,18 @@ export default function History() {
 
         <p>
           Saladmaster has changed lives one nutritious meal at a time,{" "}
-          <span style={{ fontWeight: "590" }}>
-            rising from humble origins in 1946
-          </span>{" "}
-          to become the pioneer in cookware innovation. Our founder, Harry
-          Lemmons,{" "}
-          <span style={{ fontWeight: "590" }}>
-            began the company with a simple salad cutting machine
-          </span>
-          . The original Saladmaster Machine's brilliant design and outstanding
+          <span>rising from humble origins in 1946</span> to become the pioneer
+          in cookware innovation. Our founder, Harry Lemmons,{" "}
+          <span>began the company with a simple salad cutting machine</span>.
+          The original Saladmaster Machine's brilliant design and outstanding
           functionality were so favorably appreciated that it became a
           midcentury American kitchen classic. The core notion has still to be
-          enhanced.{" "}
-          <span style={{ fontWeight: "590" }}>
-            Saladmaster started with three salespeople
-          </span>{" "}
-          and grew to over 100 Independent Distributors in the first year.
+          enhanced. <span>Saladmaster started with three salespeople</span> and
+          grew to over 100 Independent Distributors in the first year.
           Currently, we have over 28,000 Independent Authorized Dealers and
           Cooking Coaches globally. Saladmaster is a proud member of the Direct
           Selling Association (DSA) and{" "}
-          <span style={{ fontWeight: "590" }}>
-            one of the longest-running direct sales organizations
-          </span>
-          .
+          <span>one of the longest-running direct sales organizations</span>.
         </p>
       </section>
 
@@ -47,9 +34,8 @@ export default function History() {
         <QuoteCard
           header={
             <>
-              <h1 style={{ color: primaryColor }}>
-                <span>HARRY</span>{" "}
-                <span style={{ color: secondaryColor }}>LEMMONS</span>
+              <h1>
+                HARRY <span>LEMMONS</span>
               </h1>
             </>
           }
@@ -63,9 +49,8 @@ export default function History() {
         <QuoteCard
           header={
             <>
-              <h1 style={{ color: primaryColor }}>
-                <span>JAMES</span>{" "}
-                <span style={{ color: secondaryColor }}>REIGLE</span>
+              <h1>
+                JAMES <span>REIGLE</span>
               </h1>
             </>
           }
@@ -78,16 +63,16 @@ export default function History() {
       </section>
 
       <section className="timeline-container">
-        <h1 style={{ color: primaryColor }}>
-          SALADMASTER <span style={{ color: secondaryColor }}>TIMELINE</span>
+        <h1>
+          SALADMASTER <span>TIMELINE</span>
         </h1>
 
         <img src="/images/timeline.jpg" />
       </section>
 
       <section className="mapchart-container">
-        <h1 style={{ color: primaryColor }}>
-          SALADMASTER <span style={{ color: secondaryColor }}>MAP CHART</span>
+        <h1>
+          SALADMASTER <span>MAP CHART</span>
         </h1>
 
         <br />

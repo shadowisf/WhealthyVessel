@@ -56,15 +56,30 @@ img {
   border-radius: 5px;
 }
 
-button,
-.anchor-button {
+h1 {
+  font-family: "KC Obra Letra";
+  font-size: var(--font-size-xxl);
+  color: var(--primary-color);
+
+  span {
+    color: var(--secondary-color);
+  }
+}
+
+p {
+  line-height: 1.6;
+}
+
+.anchor-button,
+button {
   padding: 10px 15px;
   width: fit-content;
 
   appearance: none;
   border: none;
-  color: var(--text-color);
   text-decoration: none;
+
+  color: var(--text-color);
 
   border-radius: 5px;
 
@@ -72,15 +87,6 @@ button,
   font-weight: 599;
 
   cursor: pointer;
-}
-
-h1 {
-  font-family: "KC Obra Letra";
-  font-size: var(--font-size-xxl);
-}
-
-p {
-  line-height: 1.6;
 }
 
 .topbar-container {
@@ -163,6 +169,13 @@ p {
         background-size: 12px;
       }
     }
+
+    .hamburger-container {
+      button {
+        padding: 0;
+        background-color: transparent;
+      }
+    }
   }
 }
 
@@ -191,8 +204,10 @@ p {
     padding-top: 200px;
 
     h1 {
-      font-size: var(--font-size-xxxl);
+      font-size: var(--font-size-xxl);
       font-weight: bolder;
+      color: var(--background-color);
+      font-family: "Plus Jakarta Sans";
     }
   }
 
@@ -201,6 +216,7 @@ p {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    pointer-events: none;
   }
 }
 
@@ -242,6 +258,10 @@ p {
       p {
         font-size: var(--font-size-md);
         text-align: center;
+
+        span {
+          font-weight: 590;
+        }
       }
 
       h1 {
@@ -356,6 +376,7 @@ p {
 
   .right {
     display: grid;
+    gap: 25px;
 
     .partner-container {
       display: grid;
@@ -395,6 +416,10 @@ p {
   p {
     text-align: justify;
     font-size: var(--font-size-md);
+
+    span {
+      font-weight: 590;
+    }
   }
 
   iframe {
@@ -479,6 +504,10 @@ p {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
+
+  ol {
+    margin-left: 25px;
+  }
 }
 
 .recipe-gallery-container {
@@ -518,6 +547,12 @@ p {
   }
 }
 
+.recipe-category-container {
+  h1 {
+    text-align: center;
+  }
+}
+
 .recipe-banner-container {
   position: relative;
 
@@ -546,7 +581,24 @@ p {
     font-family: "Plus Jakarta Sans";
     font-size: var(--font-size-xxxxl);
 
-    padding: 0px 200px;
+    padding: 0px 100px;
+  }
+
+  .recipe-filter-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+
+    width: 100%;
+
+    z-index: 1;
+
+    margin: 25px 0px;
   }
 }
 

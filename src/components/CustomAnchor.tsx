@@ -18,7 +18,7 @@ export default function CustomAnchor({
   return (
     <Link
       className={className}
-      style={{ color: color, textDecoration: "none" }}
+      style={{ color: color }}
       to={href}
       target={target}
     >
