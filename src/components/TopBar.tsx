@@ -7,8 +7,20 @@ import { useLocation } from "react-router-dom";
 
 export default function TopBar() {
   const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState("en");
 
   const location = useLocation();
+
+  const languages = [
+    { value: "en", label: "ENGLISH", icon: "/icons/us.png" },
+    { value: "ar", label: "ARABIC", icon: "/icons/sa.png" },
+  ];
+
+  const handleLanguageChange = (lang: string) => {
+    setSelectedLanguage(lang);
+    setIsDropdownOpen(false);
+  };
 
   useEffect(() => {
     setIsHamburgerMenuOpen(false);
@@ -19,13 +31,14 @@ export default function TopBar() {
       <section className="topbar-container">
         <div className="banner-container">
           <div className="left">
-            <CustomAnchor href={"#"} color={textColor} target="">
-              WV Login
+            <CustomAnchor href={"/login"} color={textColor} target="">
+              WV LOGIN
             </CustomAnchor>
           </div>
 
           <div className="right">
             <CustomAnchorWithImage
+              className="animation"
               href="https://www.tiktok.com/@whealthy.cooking"
               color={textColor}
               image="/icons/tiktok.svg"
@@ -33,6 +46,7 @@ export default function TopBar() {
             />
 
             <CustomAnchorWithImage
+              className="animation"
               href="https://www.facebook.com/share/12EwN2tWXUJ/?mibextid=wwXIfr"
               color={textColor}
               image="/icons/facebook.svg"
@@ -56,25 +70,76 @@ export default function TopBar() {
           </CustomAnchor>
 
           <div className="options-container">
-            <CustomAnchor color={primaryColor} href={"/"} target="">
+            {/*             <CustomAnchor
+              className={locationPathname === "/" ? "active" : ""}
+              color={primaryColor}
+              href={"/"}
+              target=""
+            >
               HOME
-            </CustomAnchor>
-            <CustomAnchor color={primaryColor} href={"/history"} target="">
+            </CustomAnchor> */}
+
+            <CustomAnchor
+              className={location.pathname === "/history" ? "active" : ""}
+              color={primaryColor}
+              href={"/history"}
+              target=""
+            >
               HISTORY
             </CustomAnchor>
-            <CustomAnchor color={primaryColor} href={"/recipes"} target="">
+
+            <CustomAnchor
+              className={location.pathname === "/recipes" ? "active" : ""}
+              color={primaryColor}
+              href={"/recipes"}
+              target=""
+            >
               RECIPES
             </CustomAnchor>
-            <CustomAnchor color={primaryColor} href={"/products"} target="">
+
+            <CustomAnchor
+              className={location.pathname === "/products" ? "active" : ""}
+              color={primaryColor}
+              href={"/products"}
+              target=""
+            >
               PRODUCTS
             </CustomAnchor>
           </div>
 
           <div className="language-container">
-            <select>
-              <option value="en">ENGLISH</option>
-              <option value="ar">ARABIC</option>
-            </select>
+            <div className="dropdown">
+              <button
+                className="dropdown-toggle"
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              >
+                <img
+                  src={
+                    languages.find((lang) => lang.value === selectedLanguage)
+                      ?.icon
+                  }
+                />
+                {
+                  languages.find((lang) => lang.value === selectedLanguage)
+                    ?.label
+                }
+              </button>
+
+              {isDropdownOpen && (
+                <div className="dropdown-menu">
+                  {languages.map((lang) => (
+                    <div
+                      key={lang.value}
+                      className="dropdown-item"
+                      onClick={() => handleLanguageChange(lang.value)}
+                    >
+                      <img src={lang.icon} />
+                      {lang.label}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
           <div className="hamburger-container">

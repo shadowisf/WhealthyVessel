@@ -77,7 +77,7 @@ export default function Footer() {
         <br />
 
         <p>
-          WEB DEVELOPER:{" "}
+          WEBSITE DEVELOPER:{" "}
           <CustomAnchor
             href={"https://www.linkedin.com/in/ranalan/"}
             color={"black"}

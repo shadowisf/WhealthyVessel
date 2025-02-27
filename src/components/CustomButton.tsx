@@ -17,7 +17,7 @@ export default function CustomButton({
 }: CustomButtonProps) {
   return href ? (
     <Link
-      className="anchor-button"
+      className="anchor-button animation"
       style={{ backgroundColor: `${backgroundColor}`, color: `${color}` }}
       to={href}
     >
@@ -25,6 +25,7 @@ export default function CustomButton({
     </Link>
   ) : (
     <button
+      className="animation"
       style={{ backgroundColor: `${backgroundColor}`, color: `${color}` }}
       onClick={onClick}
     >

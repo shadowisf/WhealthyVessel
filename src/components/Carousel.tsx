@@ -47,7 +47,7 @@ export default function Carousel({ children }: CarouselProps) {
 
       <div className="embla__controls">
         <button
-          className="embla__prev"
+          className="embla__prev animation"
           onClick={scrollPrev}
           disabled={selectedIndex === 0}
         >
@@ -58,7 +58,7 @@ export default function Carousel({ children }: CarouselProps) {
           {Array.from({ length: slideCount }).map((_, index) => (
             <button
               key={index}
-              className={`embla__dot ${
+              className={`embla__dot animation ${
                 index === selectedIndex ? "active" : ""
               }`}
               onClick={() => emblaApi && emblaApi.scrollTo(index)}
@@ -67,7 +67,7 @@ export default function Carousel({ children }: CarouselProps) {
         </div>
 
         <button
-          className="embla__next"
+          className="embla__next animation"
           onClick={scrollNext}
           disabled={selectedIndex === slideCount - 1}
         >
