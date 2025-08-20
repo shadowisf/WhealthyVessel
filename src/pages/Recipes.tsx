@@ -45,6 +45,43 @@ export default function Recipes() {
           </CustomButton>
         </section>
 
+<section style={{ margin: "0px 0" }}>
+  <div style={{ display: "flex", alignItems: "flex-start", gap: "20px" }}>
+    
+    {/* Left Column: Image */}
+    <div style={{ flex: 1, textAlign: "center" }}>
+      <img 
+        src="images/scienceoffood.png"
+        alt="Science of Food" 
+        width={700}
+        style={{ display: "block", margin: "0 auto" }}
+      />
+    </div>
+
+    {/* Right Column: Heading + Paragraph */}
+    <div style={{ flex: 1, fontSize: "18px", lineHeight: "1.6", textAlign: "justify" }}>
+      {/* Heading for this column */}
+      <h1 style={{ marginBottom: "20px", marginTop: "60px" }}>OUR FOOD</h1>
+
+      {/* Paragraph */}
+      <p style={{ margin: "0", lineHeight: "2" }}>
+        <strong>Saladmaster</strong> cookware items are crafted to deliver both{" "}
+        <strong>performance and wellness</strong> in every meal. Built with premium{" "}
+        <strong>stainless steel</strong> and backed by a{" "}
+        <strong>lifetime warranty</strong>, these pieces are made to last for
+        generations. Their advanced design allows you to cook with little to no oil,
+        helping <strong>preserve essential nutrients</strong> and natural flavors
+        while promoting a healthier lifestyle. With even heat distribution, durable
+        construction, and elegant style, Saladmaster cookware transforms everyday
+        cooking into an <strong>easy, enjoyable, and nourishing experience.</strong>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+        
+
         <section>
           <h1 className="center">ENTREE</h1>
 

@@ -90,44 +90,64 @@ export default function Products() {
         </section>
 
         <section>
-          <p>
-            Saladmaster cookware items are crafted to deliver both performance
-            and wellness in every meal. Built with premium stainless steel and
-            backed by a lifetime warranty, these pieces are made to last for
-            generations. Their advanced design allows you to cook with little to
-            no oil, helping preserve essential nutrients and natural flavors
-            while promoting a healthier lifestyle. With even heat distribution,
-            durable construction, and elegant style, Saladmaster cookware
-            transforms everyday cooking into an easy, enjoyable, and nourishing
-            experience.
-          </p>
+         <section>
+  <h1 style={{ textAlign: "center" }}>SALADMASTER</h1>
+  <p style={{ textAlign: "justify", fontSize: "18px", lineHeight: "2" }}>
+    <strong>Saladmaster</strong> cookware items are crafted to deliver both{" "}
+    <strong>performance and wellness</strong> in every meal. Built with premium{" "}
+    <strong>stainless steel</strong> and backed by a{" "}
+    <strong>lifetime warranty</strong>, these pieces are made to last for
+    generations. Their advanced design allows you to cook with little to no oil,
+    helping <strong>preserve essential nutrients</strong> and natural flavors
+    while promoting a healthier lifestyle. With even heat distribution, durable
+    construction, and elegant style, Saladmaster cookware transforms everyday
+    cooking into an <strong>easy, enjoyable, and nourishing experience.</strong>
+  </p>
+</section>
+<div style={{ display: "flex", alignItems: "flex-start", gap: "20px" }}>
+  {/* Left Column: Bullets */}
+  <ul style={{ 
+    marginLeft: "60px", 
+    marginTop: "130px", 
+    marginRight: "0", 
+    columns: "1", 
+    flex: 1, 
+    fontSize: "18px"
+  }}>
+    <li style={{ marginBottom: "30px" }}>
+      <strong>Lifetime Warranty</strong> – Cookware built to last for generations.
+    </li>
+    <li style={{ marginBottom: "30px" }}>
+      <strong>Oil-Free Cooking</strong> – Prepare meals with little to no added oil.
+    </li>
+    <li style={{ marginBottom: "30px" }}>
+      <strong>Nutrient Preservation</strong> – Keeps natural vitamins, minerals, and flavors intact.
+    </li>
+    <li style={{ marginBottom: "30px" }}>
+      <strong>Durable Stainless Steel</strong> – Premium material for strength and style.
+    </li>
+    <li style={{ marginBottom: "30px" }}>
+      <strong>Even Heat Distribution</strong> – Consistent cooking results every time.
+    </li>
+    <li style={{ marginBottom: "30px" }}>
+      <strong>Healthy Lifestyle Choice</strong> – Supports better cooking and better living.
+    </li>
+  </ul>
 
-          <ul style={{ marginLeft: "15px", marginTop: "25px" }}>
-            <li style={{ marginBottom: "5px" }}>
-              <strong>Lifetime Warranty</strong> – Cookware built to last for
-              generations.
-            </li>
-            <li style={{ marginBottom: "5px" }}>
-              <strong>Oil-Free Cooking</strong> – Prepare meals with little to
-              no added oil.
-            </li>
-            <li style={{ marginBottom: "5px" }}>
-              <strong>Nutrient Preservation</strong> – Keeps natural vitamins,
-              minerals, and flavors intact.
-            </li>
-            <li style={{ marginBottom: "5px" }}>
-              <strong>Durable Stainless Steel</strong> – Premium material for
-              strength and style.
-            </li>
-            <li style={{ marginBottom: "5px" }}>
-              <strong>Even Heat Distribution</strong> – Consistent cooking
-              results every time.
-            </li>
-            <li style={{ marginBottom: "5px" }}>
-              <strong>Healthy Lifestyle Choice</strong> – Supports better
-              cooking and better living.
-            </li>
-          </ul>
+  {/* Right Column: Image */}
+  <div style={{ flex: 1, textAlign: "center" }}>
+    <img  
+      src="images/scienceofsaladmaster.png"
+      alt="scienceofsaladmaster" 
+      width={700}
+      style={{ 
+        display: "block",
+        margin: "20px auto"
+      }}
+    />
+  </div>
+</div>
+
         </section>
 
         {/* executive */}
