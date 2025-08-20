@@ -65,6 +65,14 @@ export default function Products() {
           </CustomButton>
 
           <CustomButton
+            onClick={() => scrollToRef(signatureRef)}
+            backgroundColor={primaryColor}
+            color="white"
+          >
+            SIGNATURE SET
+          </CustomButton>
+
+          <CustomButton
             onClick={() => scrollToRef(personalARef)}
             backgroundColor={primaryColor}
             color="white"
@@ -80,18 +88,12 @@ export default function Products() {
             PERSONAL SET B
           </CustomButton>
 
-          <CustomButton
-            onClick={() => scrollToRef(signatureRef)}
-            backgroundColor={primaryColor}
-            color="white"
-          >
-            SIGNATURE SET
-          </CustomButton>
+          
         </section>
 
         <section>
          <section>
-  <h1 style={{ textAlign: "center" }}>SALADMASTER</h1>
+  <h1 style={{ textAlign: "center", marginTop: "-80px" }}>SALADMASTER</h1>
   <p style={{ textAlign: "justify", fontSize: "18px", lineHeight: "2" }}>
     <strong>Saladmaster</strong> cookware items are crafted to deliver both{" "}
     <strong>performance and wellness</strong> in every meal. Built with premium{" "}
@@ -142,7 +144,7 @@ export default function Products() {
       width={700}
       style={{ 
         display: "block",
-        margin: "20px auto"
+        margin: "0px auto",
       }}
     />
   </div>
@@ -232,10 +234,25 @@ export default function Products() {
             <ProductCard product_image={"/images/products/tool-set.png"}>
               7-Piece Kitchen Tool Set
             </ProductCard>
+             <ProductCard
+              product_image={
+                "/images/products/long-handle-with-stainless-steel-inlay.png"
+              }
+            >
+              3x Long Handles
+            </ProductCard>
+
+            <ProductCard
+              product_image={
+                "/images/products/side-handle-with-stainless steel-inlay.png"
+              }
+            >
+              6x Side Handles
+            </ProductCard>
           </div>
         </section>
 
-        {/* master */}
+                {/* master */}
         <section className="product-container">
           <h1 className="center">
             MASTER <span>SET</span>
@@ -305,7 +322,76 @@ export default function Products() {
                 "/images/products/long-handle-with-stainless-steel-inlay.png"
               }
             >
-              6x Long Handles
+              3x Long Handles
+            </ProductCard>
+
+            <ProductCard
+              product_image={
+                "/images/products/side-handle-with-stainless steel-inlay.png"
+              }
+            >
+              6x Side Handles
+            </ProductCard>
+          </div>
+        </section>
+
+         {/* professional */}
+        <section className="product-container">
+          <h1 className="center">
+            PROFESSIONAL <span>SET</span>
+          </h1>
+
+          <div ref={professionalRef} className="product-gallery-container">
+            <ProductCard
+              product_image={"/images/products/1-qt-sauce-pan-with-cover.png"}
+            >
+              1 Qt. Sauce Pan w/ Cover
+            </ProductCard>
+
+            <ProductCard
+              product_image={"/images/products/3-qt-sauce-pan-with-cover.png"}
+            >
+              3 Qt. Sauce Pan w/ Cover
+            </ProductCard>
+
+            <ProductCard
+              product_image={"/images/products/3-qt-perforated-basket.png"}
+            >
+              3 Qt. Perforated Basket
+            </ProductCard>
+
+            <ProductCard
+              product_image={"/images/products/7-qt-roaster-with-cover.png"}
+            >
+              7 Qt. Roaster w/ Cover
+            </ProductCard>
+
+            <ProductCard
+              product_image={"/images/products/9-inch-skillet-with-cover.png"}
+            >
+              9" Skillet w/ Cover
+            </ProductCard>
+
+            <ProductCard
+              product_image={"/images/products/11-inch-skillet-with-cover.png"}
+            >
+              11" Skillet w/ Cover
+            </ProductCard>
+
+            <ProductCard
+              product_image={
+                "/images/products/stainless-steel-powdered-cleaner.png"
+              }
+            >
+              Stainless Steel Powdered Cleaner
+            </ProductCard>
+
+            <ProductCard
+              product_image={
+                "/images/products/long-handle-with-stainless-steel-inlay.png"
+              }
+            >
+              3x Long Handles
             </ProductCard>
 
             <ProductCard
@@ -317,6 +403,7 @@ export default function Products() {
             </ProductCard>
           </div>
         </section>
+
 
         {/* classic */}
         <section className="product-container">

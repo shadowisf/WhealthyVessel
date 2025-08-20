@@ -1,6 +1,6 @@
 type Recipe = {
   tag: string;
-  recipe_image: string;
+  recipe_image: string;  
   product_name: string | string[];
   product_image: string | string[];
   ingredients: string[];
@@ -463,13 +463,26 @@ export const recipes: Record<string, Recipe> = {
     ],
   },
 
-  /* "": {
-    recipe_image: "",
-    product_name: "",
-    product_image: "",
-    ingredients: [""],
-    instructions: "",
-  }, */
-};
+   /* #13 */
+"Electric Skillet Pie": {
+  tag: "dessert",
+  recipe_image: "/images/recipes/Electric-Skillet-Pie.jpg",
+  product_name: ["12 inch electric oil core skillet with cover"],
+  product_image: "/images/products/12-inch-electric-oil-core-skillet-with-cover.png",
+  ingredients: [
+    "3 - 4 Fuji apples (waffled) use Cone #4",
+    "1 pie crust (pre-made or made from scratch)",
+    "1 package apple crisp dessert mix",
+    "miniature marshmallows (optional)",
+  ],
+  instructions: [
+    "Roll out pie crust and press into cake pan.",
+    "Layer apples in pie crust until slightly over-filled.",
+    "Sprinkle dessert mix evenly over apples, making sure apples are completely covered. Add marshmallows on top, if desired.",
+    "Place cake pan into cold electric skillet and cover. Set temperature to 400°F/205°C and timer for 20 minutes.",
+    "Unplug heat control and let pie sit in covered skillet 15 minutes."
+  ]
+}
+  };
 
 export const allRecipes = Object.keys(recipes);

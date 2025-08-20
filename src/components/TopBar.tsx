@@ -31,7 +31,7 @@ export default function TopBar() {
       <section className="topbar-container">
         <div className="first-container">
           <div className="left">
-            <CustomAnchor href={"/login"} color={textColor} target="">
+            <CustomAnchor href={"/login"} color={primaryColor} target="">
               WV LOGIN
             </CustomAnchor>
           </div>

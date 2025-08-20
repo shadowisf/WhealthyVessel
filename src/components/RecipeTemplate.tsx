@@ -19,11 +19,16 @@ export default function RecipeTemplate({
     <>
       <section
         className="recipe-banner-container"
-        style={{ marginTop: "125px", marginBottom: "100px" }}
+           style={{ marginTop: "150px", marginBottom: "80px", marginLeft: "auto", marginRight: "auto" }}
       >
-        <h1>{recipe_name}</h1>
+          <h1 style={{ marginTop: "32px", textAlign: "center" }}>
+           
+            {recipe_name}</h1>
+      
 
-        <img src={recipe_image} />
+        <img src={recipe_image}
+        style={{ width: "1600px", height: "500px", objectFit: "cover", borderRadius: "8px" }} alt={recipe_name}
+        />
       </section>
 
       <main style={{ marginBottom: "100px" }}>
