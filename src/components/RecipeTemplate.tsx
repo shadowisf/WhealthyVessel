@@ -29,7 +29,7 @@ export default function RecipeTemplate({
       <main style={{ marginBottom: "100px" }}>
         <section className="ingredients-instructions-container">
           <div>
-            <h1>INGREDIENTS:</h1>
+            <h2>INGREDIENTS:</h2>
             <p>
               {ingredients.map((ingredient, index) => (
                 <li key={index}>{ingredient}</li>
@@ -38,7 +38,7 @@ export default function RecipeTemplate({
           </div>
 
           <div>
-            <h1>INSTRUCTIONS:</h1>
+            <h2>INSTRUCTIONS:</h2>
             <ol>
               {instructions.map((instruction, index) => (
                 <li key={index}>{instruction}</li>

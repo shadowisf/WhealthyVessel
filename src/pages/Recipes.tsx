@@ -19,14 +19,15 @@ export default function Recipes() {
 
   return (
     <>
-      <section
-        style={{ marginTop: "125px", marginBottom: "100px" }}
-        className="recipe-banner-container"
-      >
+      <section style={{ marginTop: "120px" }} className="banner-container">
         <img src="/images/recipe-banner.jpg" />
-        <h1>THE RECIPE CORNER</h1>
+        <div>
+          <h1>THE RECIPE CORNER</h1>
+        </div>
+      </section>
 
-        <section className="recipe-filter-container">
+      <main>
+        <section className="filter-container">
           <CustomButton
             onClick={() => scrollToRef(entreeRef)}
             backgroundColor={primaryColor}
@@ -43,11 +44,9 @@ export default function Recipes() {
             DESSERT
           </CustomButton>
         </section>
-      </section>
 
-      <main style={{ marginBottom: "100px" }}>
-        <section className="recipe-category-container">
-          <h1>ENTREE</h1>
+        <section>
+          <h1 className="center">ENTREE</h1>
 
           <div ref={entreeRef} className="recipe-gallery-container">
             {allRecipes
@@ -66,8 +65,8 @@ export default function Recipes() {
           </div>
         </section>
 
-        <section className="recipe-category-container">
-          <h1>DESSERT</h1>
+        <section>
+          <h1 className="center">DESSERT</h1>
 
           <div ref={dessertRef} className="recipe-gallery-container">
             {allRecipes

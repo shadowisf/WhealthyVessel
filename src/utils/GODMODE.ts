@@ -12,8 +12,8 @@ export const recipes: Record<string, Recipe> = {
   "HERBED ROASTED TURKEY": {
     tag: "entree",
     recipe_image: "/images/recipes/herb-roasted-turkey.jpg",
-    product_name: "12 Qt. Roaster",
-    product_image: "/images/products/12-qt-roaster.png",
+    product_name: "10 Qt. Roaster with Cover",
+    product_image: "/images/products/10-qt-roaster-with-cover.png",
     ingredients: [
       "1 large turkey (14-22 lbs.), cleaned & giblets removed",
       "2 navel oranges, zested #1 cone & quartered",
@@ -42,10 +42,13 @@ export const recipes: Record<string, Recipe> = {
   "VEGGIE LASAGNA": {
     tag: "entree",
     recipe_image: "/images/recipes/veggie-lasagna.jpg",
-    product_name: ["Food Processor", `12" Electric Oil Core Skillet`],
+    product_name: [
+      "Food Processor",
+      `12" Electric Oil Core Skillet with Cover`,
+    ],
     product_image: [
       "/images/products/food-processor.png",
-      "/images/products/12-electric-oil-core-skillet.png",
+      "/images/products/12-inch-electric-oil-core-skillet-with-cover.png",
     ],
     ingredients: [
       "1 onion, strung, use Cone #2",
@@ -85,13 +88,13 @@ export const recipes: Record<string, Recipe> = {
     recipe_image: "/images/recipes/braised-pork-ribs-with-vegetables.jpg",
     product_name: [
       "Food Processor",
-      `12" Electric Oil Core Skillet`,
-      "3.5 Qt Double Walled Bowl",
+      `12" Electric Oil Core Skillet with Cover`,
+      "3.5 Qt. Double Walled Salad Bowl",
     ],
     product_image: [
       "/images/products/food-processor.png",
-      "/images/products/12-electric-oil-core-skillet.png",
-      "/images/products/3.5-qt-double-walled-bowl.png",
+      "/images/products/12-inch-electric-oil-core-skillet-with-cover.png",
+      "/images/products/3.5-qt-double-walled-salad-bowl.png",
     ],
     ingredients: [
       "2 lbs pork ribs, boneless",
@@ -132,10 +135,10 @@ export const recipes: Record<string, Recipe> = {
     tag: "entree",
     recipe_image:
       "/images/recipes/smoky-pork tenderloin-with-grilled-pineapple-salsa.jpg",
-    product_name: ["Smokeless Broiler", "Large Mixing Bowl"],
+    product_name: ["Smokeless Broiler", "3.5 Qt. Double Walled Salad Bowl"],
     product_image: [
       "/images/products/smokeless-broiler.png",
-      "/images/products/3.5-qt-double-walled-bowl.png",
+      "/images/products/3.5-qt-double-walled-salad-bowl.png",
     ],
     ingredients: [
       "1/2 cup onions, strung, use Cone #2",
@@ -169,14 +172,14 @@ export const recipes: Record<string, Recipe> = {
     tag: "entree",
     recipe_image: "/images/recipes/chicken-and-couscous.jpg",
     product_name: [
-      "Saladmaster Food Processor",
-      "3 Qt./2.8 L Sauce Pan with Cover",
-      `11" Large Skillet with Cover small mixing bowl`,
+      "Food Processor",
+      "3 Qt. Sauce Pan with Cover",
+      `11" Skillet with Cover`,
     ],
     product_image: [
       "/images/products/food-processor.png",
-      "/images/products/3-qt-or-2.8-l-sauce-pain-with-cover.png",
-      "/images/products/3.5-qt-double-walled-bowl.png",
+      "/images/products/3-qt-sauce-pan-with-cover.png",
+      "/images/products/11-inch-skillet-with-cover.png",
     ],
     ingredients: [
       "3 1/2 cups chicken stock, fat-free, low-sodium, divided (820 mL)",
@@ -253,10 +256,13 @@ export const recipes: Record<string, Recipe> = {
   "CAJUN RICE & SHRIMP": {
     tag: "entree",
     recipe_image: "/images/recipes/cajun-rice-and-shrimp.jpg",
-    product_name: ["Food Processor", `12" Chef's Gourmet Skillet`],
+    product_name: [
+      "Food Processor",
+      `12" Electric Oil Core Skillet with Cover`,
+    ],
     product_image: [
       "/images/products/food-processor.png",
-      "/images/products/12-electric-oil-core-skillet.png",
+      "/images/products/12-inch-electric-oil-core-skillet-with-cover.png",
     ],
     ingredients: [
       "1/2 cup onions, strung, use Cone #2 (80 g)",
@@ -289,8 +295,9 @@ export const recipes: Record<string, Recipe> = {
   "UNFRIED CHICKEN": {
     tag: "entree",
     recipe_image: "/images/recipes/unfried-chicken.jpeg",
-    product_name: [`12" Electric Oil Core Skillet`],
-    product_image: "/images/products/12-electric-oil-core-skillet.png",
+    product_name: [`12" Electric Oil Core Skillet with Cover`],
+    product_image:
+      "/images/products/12-inch-electric-oil-core-skillet-with-cover.png",
     ingredients: ["12 chicken thighs, boneless, skinless"],
     instructions: [
       "Preheat the electric skillet to 450°F/230°C.",
@@ -306,14 +313,14 @@ export const recipes: Record<string, Recipe> = {
     tag: "entree",
     recipe_image: "/images/recipes/orange-ginger-stir-fry.jpg",
     product_name: [
-      "Saladmaster Food Processor",
-      "5 Qt./4.7 L Gourmet Wok with Cover",
-      "Mixing Bowl",
+      "Food Processor",
+      "5 Qt. Wok with Cover",
+      "3.5 Qt. Double Walled Salad Bowl",
     ],
     product_image: [
       "/images/products/food-processor.png",
-      "/images/products/5-qt-gourmet-wok-with-cover.png",
-      "/images/products/3.5-qt-double-walled-bowl.png",
+      "/images/products/5-qt-wok-with-cover.png",
+      "/images/products/3.5-qt-double-walled-salad-bowl.png",
     ],
     ingredients: [
       "24 ounces chicken tenders (340 g)",
@@ -350,8 +357,8 @@ export const recipes: Record<string, Recipe> = {
   "LEMON GARLIC SHRIMP & QUINOA": {
     tag: "entree",
     recipe_image: "/images/recipes/garlic-lemon-shrimp-&-quinoa.jpg",
-    product_name: ['11" Large Skillet with Cover'],
-    product_image: "/images/products/12-electric-oil-core-skillet.png",
+    product_name: ['11" Skillet with Cover'],
+    product_image: "/images/products/11-inch-skillet-with-cover.png",
     ingredients: [
       "1 lb raw, tail-on shrimp, peeled and deveined (1/2 kg)",
       "1 tsp salt (optional) (6 g)",
@@ -385,12 +392,12 @@ export const recipes: Record<string, Recipe> = {
     tag: "dessert",
     recipe_image: "/images/recipes/triple-chocolate-cheesecake.jpg",
     product_name: [
-      "Saladmaster Food Processor",
-      '12" Electric Oil Core Skillet',
+      "Food Processor",
+      '12" Electric Oil Core Skillet with Cover',
     ],
     product_image: [
       "/images/products/food-processor.png",
-      "/images/products/12-electric-oil-core-skillet.png",
+      "/images/products/12-inch-electric-oil-core-skillet-with-cover.png",
     ],
     ingredients: [
       "1 cup hazelnuts, shredded, use Cone #1",
@@ -426,10 +433,10 @@ export const recipes: Record<string, Recipe> = {
   "CHOCOLATE BROWNIE CAKE": {
     tag: "dessert",
     recipe_image: "/images/recipes/chocolate-brownie-cake.jpg",
-    product_name: ["Saladmaster Food Processor", '9" Small Skillet with Cover'],
+    product_name: ["Food Processor", '9" Skillet with Cover'],
     product_image: [
       "/images/products/food-processor.png",
-      "/images/products/12-electric-oil-core-skillet.png",
+      "/images/products/9-inch-skillet-with-cover.png",
     ],
     ingredients: [
       "1 medium apple, shredded, use Cone #2",

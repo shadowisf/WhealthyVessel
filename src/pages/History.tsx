@@ -2,13 +2,14 @@ import QuoteCard from "../components/QuoteCard";
 
 export default function History() {
   return (
-    <main style={{ marginTop: "200px", marginBottom: "200px" }}>
+    <main style={{ marginTop: "150px", marginBottom: "200px" }}>
       <section className="history-container">
         <h1>
           SEVEN DECADES OF <span>MAKING LIFE BETTER</span>
         </h1>
 
         <iframe
+          style={{ width: "100%", height: "75dvh" }}
           src="https://www.youtube.com/embed/1ucCoCygirw"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         />

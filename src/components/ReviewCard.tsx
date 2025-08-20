@@ -15,7 +15,7 @@ export default function ReviewCard({
     <div className="individual-review-card-container">
       <img className="profile-image" src={profile_image} />
 
-      <h3>{name}</h3>
+      <span>{name}</span>
 
       <div className="star-container">
         {Array(stars)

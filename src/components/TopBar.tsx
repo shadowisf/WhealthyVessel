@@ -29,7 +29,7 @@ export default function TopBar() {
   return (
     <>
       <section className="topbar-container">
-        <div className="banner-container">
+        <div className="first-container">
           <div className="left">
             <CustomAnchor href={"/login"} color={textColor} target="">
               WV LOGIN
@@ -63,22 +63,13 @@ export default function TopBar() {
             target=""
           >
             <img src="/icons/logo.svg" alt="logo" />
-            <div>
-              <span style={{ color: primaryColor }}>WHEALTHY </span>
-              <span style={{ color: secondaryColor }}>VESSEL</span>
-            </div>
+
+            <span>
+              WHEALTHY <span style={{ color: secondaryColor }}>VESSEL</span>
+            </span>
           </CustomAnchor>
 
           <div className="options-container">
-            {/*             <CustomAnchor
-              className={locationPathname === "/" ? "active" : ""}
-              color={primaryColor}
-              href={"/"}
-              target=""
-            >
-              HOME
-            </CustomAnchor> */}
-
             <CustomAnchor
               className={location.pathname === "/history" ? "active" : ""}
               color={primaryColor}
